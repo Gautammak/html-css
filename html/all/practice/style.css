@@ -1,0 +1,59 @@
+/* .pt-fancybox-style-3 {
+    background: black;
+    padding: 45px 30px;
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+} */
+
+/* 
+.pt-fancybox-style-3 .pt-fancy-box-hoverbg {
+    
+}
+
+.pt-fancybox-style-3 .pt-fancy-box-hoverbg:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--purple-color);
+    opacity: 0.9;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+} */
+
+.pt-fancy-box-style-1{
+    background:wheat;
+    padding: 45px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.pq-fancy-box .pt-fancy-box-hoverbg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.pq-fancy-box .pt-fancy-box-hoverbg::before{
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: purple;
+    opacity: 0.9;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    background-image: url(1f.jpg);
+}
+
+.pt-fancy-box-style-1 .pt-fancy-box-info{
+    position: relative;
+}

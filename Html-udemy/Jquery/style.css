@@ -1,0 +1,16 @@
+body{
+    height:90vh ;
+    width: 98%;
+    background-image: url(images.jpg);
+    background-size: cover;
+}
+
+.container{
+    position:absolute;
+    transform: translate(-50%,-50%);
+     margin: 20%;
+     margin-left: 45%;
+     text-align: center;
+     
+
+}

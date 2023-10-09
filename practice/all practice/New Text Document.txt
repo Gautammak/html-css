@@ -1,0 +1,108 @@
+dropdown with hover
+navbar drop
+nested navbar fields
+image movement
+responsive
+
+
+
+12-6-23
+body elementor kit 7
+
+body
+line height -2
+font size-1rem
+style weight normal
+bg color white
+margin - 0
+
+screen-reader-
+h =0px
+w 1px
+
+pt-header
+w=100%
+
+
+
+
+pt-top-header
+p = 0px
+fs=14px
+
+
+cont
+max-width=1300px
+
+row
+gutter-x  1.5rem
+gutter-y   0
+
+col-md-6
+width=50%
+
+
+pt-bottom-header
+min-height =90px
+
+col-lg-12
+100% width
+
+navbar = padding =0
+
+element
+1349px  width
+
+
+pt-infobox
+padding 45px 30px
+
+pt-info-title
+h5
+font-weight 600
+
+p
+margin-bottom=30px
+
+pt-info-call
+margin-bottom =5px
+
+icon
+font-size=20px
+width height =45px
+line-height=45px
+
+h4
+font -size 28px
+line-height =36px
+
+pt section sub-title
+letter space =0.04em
+font weight 600px;
+font-size 14px
+line-height 22px
+margin 0 0 10px
+padding 4px 8px;
+
+pt-section title
+fontsize=36px
+line height 44px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

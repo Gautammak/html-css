@@ -1,0 +1,435 @@
+
+/* 
+mobile view 60px section padding
+laptop view 90px section padding */
+
+
+/* 1920  */
+@media(max-width:1999px) {
+    
+}
+
+
+/* 1680, 1600  */
+@media(max-width:1699px) {}
+
+@media(max-width:1679px) {}
+
+/* 1440  */
+@media(max-width:1499px) {}
+
+
+/* 1366  */
+@media(max-width:1399px) {   
+}
+
+/* 1280  */
+@media(max-width:1365px) {
+  .pq-about-section  .pq-about-btn {
+        margin-top: 60px;
+    }
+}
+
+/* 1180  */
+ @media(max-width:1279px) {
+section{
+        padding: 90px 0 90px 0;
+    }
+
+    .pq-about-section {
+
+        padding: 160px 0 90px 0;
+    }
+
+    .consulting{
+        padding: 90px 0 90px 0;
+    }
+  .pq-about-img  .pq-img1 {
+        width: 100%;
+    }
+
+  .pq-about-img .pq-img2{
+       
+        width: 50%;
+        bottom: 0;
+    } 
+
+    .offer-img {
+         margin-bottom: 0;
+    }
+    .offer-img .img-fluid{
+        width: 100%;
+    }
+
+    .consulting-img .img-fluid{
+        width: 100%;
+    }
+
+    .pq-offer   .project-wrapper {
+       
+      
+        justify-content: center;
+       
+    }
+   
+    .pq-offer   .project-wrappers {
+       
+      
+        justify-content: center;
+       
+    }
+    .pq-offer   .project-wrapper1 {
+       
+      
+        justify-content: center;
+       
+    }
+    .pq-offer   .project-wrapper2 {
+       
+      
+        justify-content: center;
+       
+    }
+
+  }    /* laptop view   */
+
+/* 1024  */
+@media(max-width:1099px) {
+   .navbar .pq-search-icon {
+    
+         margin-left: 0; 
+    }
+
+ .navbar   .navbar-nav>li {
+         margin-left: 0; 
+       
+    }
+
+    .pq-about-subtitle {
+       
+        font-size: 45px;
+       
+    }
+    .pq-debate-section-subtitle {
+        
+        font-size: 45px;
+       
+    }
+
+    .pq-offer-subtitle {
+       
+        font-size: 45px;
+       
+    }
+    .consulting-subtitle {
+       
+        font-size: 45px;
+       
+    }
+    .pq-agency-title h5 {
+       
+        font-size: 45px;
+       
+    }
+    .team-subtitle {
+       
+        font-size: 45px;
+       
+    }
+
+    .pq-project-icon {
+        font-size: 70px;
+       
+    }
+    .pq-project-info .pq-project-number {
+        font-size: 50px;
+       
+    }
+    .pq-project-info i {
+        font-size: 50px;
+       
+    }
+    
+}  
+
+
+/* 980  */
+@media(max-width:1023px) {
+
+
+    .pq-side-bar-icon{
+        display: none;
+    }
+
+ 
+  .pq-debate-section  .carousel-inner {
+        height: 750px;
+    }
+
+    .img-fluid {
+       width: 100%;
+    }
+
+    .pq-offer-subtitle {
+        font-size: 43px;
+    }
+
+    
+    .pq-about-subtitle {
+       
+        font-size: 43px;
+       
+    }
+    .pq-debate-section-subtitle {
+        
+        font-size: 43px;
+       
+    }
+
+    .pq-offer-subtitle {
+       
+        font-size: 43px;
+       
+    }
+    .consulting-subtitle {
+       
+        font-size: 43px;
+       
+    }
+    .pq-agency-title h5 {
+       
+        font-size: 43px;
+       
+    }
+    .team-subtitle {
+       
+        font-size: 43px;
+       
+    }
+}
+
+
+/* 800 786  */
+@media(max-width:979px) {
+    .pq-offer-subtitle {
+        font-size: 37px;
+    }
+
+    
+    .pq-about-subtitle {
+       
+        font-size: 37px;
+       
+    }
+    .pq-debate-section-subtitle {
+        
+        font-size: 37px;
+       
+    }
+
+    .pq-offer-subtitle {
+       
+        font-size: 34px;
+       
+    }
+    .consulting-subtitle {
+       
+        font-size: 37px;
+       
+    }
+    .pq-agency-title h5 {
+       
+        font-size: 37px;
+       
+    }
+    .team-subtitle {
+       
+        font-size: 37px;
+       
+    
+}
+
+.pq-project-icon {
+    font-size: 60px;
+   
+}
+.pq-project-info .pq-project-number {
+    font-size: 40px;
+   
+}
+
+.pq-project-info i {
+    font-size: 40px;
+   
+}
+
+
+    
+}
+@media(max-width:799px) {
+   
+  
+}
+
+
+
+/* 480 */
+ @media(max-width:767px) {
+    section{
+        padding: 60px 0 60px 0;
+    }
+
+    .pq-about-section {
+
+        padding: 130px 0 60px 0;
+    }
+
+    .consulting{
+        padding: 60px 0 60px 0;
+    }
+
+    .pq-about-img {
+        margin-bottom: 30px;
+    }
+
+    .consulting-img{
+        margin-bottom: 30px;
+    }
+   
+
+ .pq-award-img{
+        margin-top: 30px;
+    }
+
+.pq-debate-section .carousel-inner {
+            height: 1070px;
+    }
+
+ .pq-offer   .project-wrapper {
+       
+        border-left: 0; 
+        justify-content: center;
+       
+    }
+    .pq-offer   .project-wrappers {
+       
+      
+        justify-content: center;
+       
+    }
+
+    .pq-offer  .project-wrapper1 {
+         justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+     
+   }
+
+    .pq-offer  .project-wrapper2 {
+        justify-content: center;
+         border-left: 0;
+      
+    }
+
+
+
+    /* .pq-offer-subtitle {
+        font-size: 35px;
+    }
+    .consulting-subtitle {
+       
+        font-size: 45px;
+       
+
+    }
+
+    .team-subtitle {
+        
+        font-size: 45px;
+       
+    }
+
+    .pq-agency-title h5 {
+        font-size: 39px;
+    } */
+ }  /*  mobile view start */
+
+/* 380 */
+@media(max-width:479px) {
+
+     .pq-about-subtitle {
+        font-size: 34px;
+    }
+    .pq-debate-section-subtitle {
+        font-size: 34px;
+    }
+    .pq-offer-subtitle {
+        font-size: 28px;
+    }
+    .pq-offer-para {
+        
+        font-size: 14px;
+       
+    }
+    .consulting-subtitle {
+        font-size: 34px;
+    }
+    .team-subtitle {
+        font-size: 34px;
+    }
+    .pq-agency-title h5 {
+        font-size: 34px;
+    } 
+
+    .pq-search-icon{
+        display: none;
+    }
+    .pq-team-designations {
+       
+        font-size: 12px;
+       
+    }
+
+    .pq-team-name {
+       
+        font-size: 20px;
+      
+    }
+}
+
+/* 320 */
+@media(max-width:397px) {
+     .pq-about-subtitle {
+        font-size: 28px;
+    }
+    .pq-debate-section-subtitle {
+        font-size: 28px;
+    }
+    .pq-offer-subtitle {
+        font-size: 23px;
+    }
+    .pq-offer-para {
+        font-size: 12px;
+    }
+    .consulting-subtitle {
+        font-size: 28px;
+    }
+
+    .team-subtitle {
+        font-size: 28px;
+    }
+    .pq-agency-title h5 {
+        font-size: 28px;
+    } 
+
+    .navbar-brand img {
+        height: 58px;
+    }
+    .pq-copyright {
+       
+        font-size: 14px;
+       
+    }
+    .pq-debate-section  .carousel-inner {
+        height: 1080px;
+    }
+}

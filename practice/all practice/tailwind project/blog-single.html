@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicate – Health & Medical HTML Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2490eb',
+                        'primarydark': '#14457b',
+                        'dark': '#18100f',
+                        'secondary': '#666666',
+                        'grey': '#f4f6f9',
+                        'white': '#ffffff',
+                    },
+                    fontFamily: {
+                        'body': ['Montserrat', 'sans-serif'],
+                        'title': ['Quicksand', 'sans-serif'],
+                        'themify': ['themify'],
+                        'fontawesome': ['"Font Awesome 6 Free"'],
+                        'ionicons': ['"Ionicons"']
+                    },
+                    backgroundImage: {
+                        'pattern': "url('images/bg-1.png')",
+                        'arrow': "url('images/process/bg.png')",
+                        'breadcrumb': "url('images/breadcrumb.jpg')"
+                    },
+                    keyframes: {
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translate3d( 0, -100%, 0)'},
+                            '100%': { opacity:'1', transform: 'none'}
+                        }
+                    },
+                    animation:{
+                        fadeInDown: 'fadeInDown 1.25s ease-in-out'
+                    }
+                },
+                container:{
+                    center: true,
+                },
+                screens: {
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1300px'
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- LOADING FONTS AND ICONS -->
+    <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+</head>
+
+<body class="leading-loose">
+
+    <!-- Loading -->
+    <div id="pq-loading" class="bg-white flex flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1000] w-screen h-screen">
+        <img src="images/logo.png" class="img-fluid h-[60px]" alt="loading">
+    </div>
+    <!-- Loading -->
+
+    <!-- Header -->
+    <header id="pq-header" class="pq-header-default relative bg-white z-[99]">
+        <div class="pq-top-header bg-primarydark p-0 text-[14px] hidden lg:block">
+            <div class="lg:container">
+                <div class="flex justify-between">
+                    <div class="grid grid-rows-1 w-full">
+                        <div class="grid grid-cols-12">
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none">
+                                    <li class="inline-block text-white border-[#FFFFFF] border-s border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] ms-0">
+                                        <a href="tel:+1800001658">
+                                            <i class="fas fa-phone mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">+1800-001-658</span>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block text-white border-[#FFFFFF] border-x border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] me-0">
+                                        <a href="mailto:info@peacefulthemes.com">
+                                            <i class="fas fa-envelope mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">info@peacefulthemes.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none text-end">
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-x border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-bottom-header">
+            <div class="xl:container">
+                <nav class="bg-white">
+                    <div class="max-w-screen-xl flex flex-row flex-nowrap items-center justify-between mx-auto p-3 lg:p-5">
+                        <a href="index.html" class="inline-block">
+                            <img src="images/logo.png" class="w-[164px] md:w-[194px] lg:w-[294px]" alt="Medicate-logo">
+                        </a>
+                        <button data-collapse-toggle="navbar-default" type="button" class="inline-block items-center py-[12px] px-[18px] text-[20px] leading-normal text-white bg-primary rounded-[3px] lg:hidden focus:outline-none order-3 ml-[15px] md:ml-[30px]" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="hidden w-full lg:inline-block lg:w-full lg:relative lg:top-0 lg:left-0 absolute top-[78px] left-0 bg-white" id="navbar-default">
+                            <ul class="font-semibold font-title flex flex-col lg:flex-row lg:item-center lg:justify-end ">
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="index.html" class="font-semibold text-[14px] leading-[22px] uppercase">home</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="about-us.html" class="font-semibold text-[14px] leading-[22px] uppercase">about us</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="portfolio-single.html" class="font-semibold text-[14px] leading-[22px] uppercase">portfolio</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="blog-single.html" class="font-semibold text-primary text-[14px] leading-[22px] uppercase">blog</a>
+                                </li>
+                                <li class="font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="contact-us.html" class="font-semibold text-[14px] leading-[22px] uppercase">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pq-menu-search-block relative lg:ml-[30px] ms-auto md:mr-[30px]">
+                            <a href="javascript:void(0)" id="pq-seacrh-btn" class="text-dark text-[20px] inline-block">
+                                <i class="ti-search"></i>
+                            </a>
+                            <div class="pq-search-form absolute top-[59px] lg:top-[65px] right-[-30px] p-[15px] w-[350px] z-[999] bg-white rounded-[3px] border-[2px] border-solid hidden">
+                                <form class="realtive">
+                                    <label class="mb-0 float-left w-full relative">
+                                        <input type="text" placeholder="Search ..." class="bg-grey focus:border-0 rounded-[3px] border-[1px] border-solid border-grey text-dark w-full float-left text-[16px] font-normal pt-0 pb-0 pl-[15px] pr-[15px] h-[54px] leading-[54px] outline-0 relative">
+                                        <button type="submit" class="search-submit before:content-['\e610'] font-themify font-normal text-[20px] border-tr-[3px] border-br[3px] bg-primarydark p-0 absolute text-white leading-[54px] h-[54px] w-[54px] top-0 right-0"></button>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" class="pq-button pq-button-flat relative w-auto inline-block text-white bg-primary tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark duration-500 hidden md:block">
+                            <div class="pq-button-block flex items-center justify-start">
+                               <span class="pq-button-text mr-[10px]">Appointments</span>
+                               <i class="ion ion-plus-round"></i>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb !bg-breadcrumb py-[130px] text-white realtive bg-no-repeat bg-cover bg-[top_center]">
+        <div class="xl:container">
+            <div class="flex items-center justify-center lg:justify-start">
+                <div class="grid grid-rows-1 grid-flow-col">
+                    <div class="grid grid-cols-12 gap-4 w-full">
+                        <div class="flex flex-cols-12 col-span-12 px-[15px]">
+                            <nav class="relative">
+                                <div class="pq-breadcrumb-container">
+                                    <div class="pq-breadcrumb-title">
+                                        <h1 class="font-title font-semibold text-center lg:text-start break-words text-dark m-0 capitalize text-[34px] leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[42px] lg:leading-[50px] xl:text-[56px] xl:leading-[64px] mb-[15px]">Blog Single</h1>
+                                    </div>
+                                    <ol class="flex p-0 m-0 justify-center lg:justify-start list-none">
+                                        <li class="breadcrumb-item mr-[15px] tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                            <a href="index.html" class="text-secondary"><i class="fas fa-home mr-2"></i>Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active mr-[15px] ps-0 tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase text-primary font-title before:content-['\f125'] before:text-[12px] before:font-ionicons before:pr-[15px] before:text-secondary before:float-none">Blog Single</li>
+                                    </ol>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb -->
+
+    <!-- blog-Info -->
+    <section class="blog-info relative pt-[60px] pb-[140px] md:pt-[90px] md:pb-[170px] xl:pt-[130px] xl:pb-[210px]">
+        <div class="xl:container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12">
+                        <div class="flex flex-col col-span-12 lg:col-span-8 px-[15px]">
+                            <div class="pq-blog-post mb-[30px] bg-white rounded-[3px] shadow-[0_0_30px_0px_rgba(0,20,9,0.1)] group">
+                                <div class="pq-post-media overflow-hidden mb-0 relative">
+                                    <img src="images/blog/1.jpg" class="scale-100 duration-500 ease-in-out w-full border-tl-[3px] border-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                    <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                        <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                            <span>December 5, 2021</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pq-blog-contain py-[30px] px-[15px] md:p-[30px]">
+                                    <div class="pq-post-meta">
+                                        <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                            <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                            <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                <a href="blog-single.html" class="text-secondary no-underline">
+                                                    <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                    0 Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="text-secondary font-body mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since.</p>
+                                    <h4 class="font-title font-semibold text-dark text-[28px] leading-[36px] capitalize m-0 break-words">Results Are Easy To Obtain</h4>
+                                    <p class="text-secondary font-body mb-[30px]">Medicate is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <div class="grid grid-rows-1 grid-flow-col w-full">
+                                        <div class="grid grid-cols-12 gap-y-0">
+                                            <div class="flex flex-col col-span-12 md:col-span-6 md:pe-[15px]">
+                                                <img src="images/blog/single-blog-1.jpg" class="max-w-full h-auto" alt="">
+                                            </div>
+                                            <div class="flex flex-col col-span-12 md:col-span-6 md:ps-[15px] mt-6 md:mt-0">
+                                                <img src="images/blog/single-blog-2.jpg" class="max-w-full h-auto" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-6 mb-[30px] text-secondary font-body">Reader distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <h4 class="font-title font-semibold text-dark text-[28px] leading-[36px] capitalize m-0 break-words">Expert Recommendations</h4>
+                                    <p class="text-secondary font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                                    <div class="mt-6">
+                                        <blockquote class="bg-grey py-[15px] px-[30px] rounded-[3px] border-l-[5px] border-solid border-primary mb-[45px]">
+                                            <p class="font-body text-secondary mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                            <p class="mb-0"><strong class="font-title text-primary font-semibold italic">– Michal Smart</strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <iframe class="pq-video w-full h-[360px] rounded-[3px]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;widget_referrer=https%3A%2F%2Fmedicate.peacefulqode.com%2Fhome-3%2F&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fmedicate.peacefulqode.com&amp;widgetid=1" id="widget2"></iframe>
+                                </div>
+                            </div>
+                            <h3 class="comments-title pt-[30px] relative m-0 pb-[0] font-title font-semibold text-dark capitalize break-words text-[32px] leading-[40px]">2 Comment</h3>
+                            <ol class="comment-list list-none m-0 p-0">
+                                <li class="mt-[30px] align-top p-0 mb-0">
+                                    <div class="pq-comment-info py-[30px] px-[15px] md:p-[30px] relative bg-grey border border-solid border-grey rounded-[3px]">
+                                        <div class="pq-comment-wrap md:flex md:justify-start">
+                                            <div class="pq-comment-avatar md:pr-[15px] mb-[15px] md:mb-0">
+                                                <img src="images/blog/user.png" class="w-[70px]" alt="">
+                                            </div>
+                                            <div class="pq-comment-box relative">
+                                                <h5 class="title font-title font-semibold text-dark capitalize m-0 break-words text-[20px] leading-[28px] duration-500 hover:text-primary">Admin</h5>
+                                                <div class="comment-content">
+                                                    <p class="font-body text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <!-- .comment-content -->
+                                            </div>
+                                            <!-- .comment-author -->
+                                            <div class="reply"> 
+                                                <a rel="nofollow" class="comment-reply-link absolute right-[30px] top-[30px] m-0 text-[14px] leading-[22px] tracking-[0.04em] font-title uppercase text-primary" href="#" data-commentid="2" data-postid="7401" data-belowelement="div-comment-2" data-respondelement="respond" data-replyto="Reply to Thomas Luis" aria-label="Reply to Thomas Luis">Reply</a>
+                                            </div>
+                                            <!-- .reply -->
+                                        </div>
+                                    </div>
+                                    <ol class="children md:pl-[60px] mt-[30px] align-top list-none">
+                                        <div class="pq-comment-info py-[30px] px-[15px] md:p-[30px] relative border border-solid border-grey bg-grey rounded-[3px]">
+                                            <div class="pq-comment-wrap md:flex md:justify-start">
+                                                <div class="pq-comment-avatar md:pr-[15px] mb-[15px] md:mb-0">
+                                                    <img src="images/blog/user.png" class="w-[70px]" alt=""> </div>
+                                                <div class="pq-comment-box">
+                                                    <h5 class="title font-title font-semibold text-dark capitalize m-0 break-words text-[20px] leading-[28px] duration-500 hover:text-primary">
+                                                        <a href="index.html" rel="external nofollow ugc" class="url">admin</a>
+                                                    </h5>
+                                                    <div class="comment-content">
+                                                        <p class="font-body text-secondary">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                            commodo consequat.</p>
+                                                    </div>
+                                                    <!-- .comment-content -->
+                                                </div>
+                                                <!-- .comment-author -->
+                                                <div class="reply"> <a rel="nofollow" class="comment-reply-link absolute right-[30px] top-[30px] m-0 text-[14px] leading-[22px] tracking-[0.04em] font-title uppercase text-primary" href="#" data-commentid="3"
+                                                        data-postid="7401" data-belowelement="div-comment-3" data-respondelement="respond"
+                                                        data-replyto="Reply to admin" aria-label="Reply to admin">Reply</a> </div>
+                                                <!-- .reply -->
+                                            </div>
+                                        </div>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <div class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title mt-6 pt-[30px] relative m-0 pb-0 font-title text-dark font-semibold capitalize break-words text-[32px] leading-[40px]">Write a Reply or Comment </h3>
+                                <form method="post" class="comment-form pq-applyform">
+                                    <p class="comment-notes mb-[30px] font-body">
+                                        <span class="text-red-500">Your email address will not be published.</span> <span class="required-field-message text-red-500" aria-hidden="true">Required fields are marked <span class="required text-red-500" aria-hidden="true">*</span></span>
+                                    </p>
+                                    <div class="grid grid-rows-1 grid-flow-col w-full">
+                                        <div class="grid grid-cols-12 gap-4 gap-y-0">
+                                            <div class="flex flex-col col-span-12 md:col-span-4">
+                                                <input class="w-full border-0 focus:border-0 bg-grey text-dark placeholder:text-dark placeholder:font-body mb-[30px] float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] outline-0" type="text" placeholder=" Enter Name">
+                                            </div>
+                                            <div class="flex flex-col col-span-12 md:col-span-4">
+                                                <input class="w-full border-0 focus:border-0 bg-grey text-dark placeholder:text-dark placeholder:font-body mb-[30px] float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] outline-0" type="text" placeholder=" Enter Email">
+                                            </div>
+                                            <div class="flex flex-col col-span-12 md:col-span-4">
+                                                <input class="w-full border-0 focus:border-0 bg-grey text-dark placeholder:text-dark placeholder:font-body mb-[30px] float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] outline-0" type="text" placeholder="Enter Url">
+                                            </div>
+                                            <div class="flex flex-col col-span-12">
+                                                <textarea id="message" class="h-[250px] border-0 focus:border-0 text-dark bg-grey placeholder:text-dark placeholder:font-body mb-[30px] float-left text-[16px] leading-[54px] font-normal py-[10px] px-[15px] duration-500 ease-in-out rounded-[3px] outline-0" name="comment" cols="60" rows="6" placeholder=" Enter Your Comment"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="pq-button mb-0 relative w-auto bg-primary hover:bg-dark text-white tracking-[0.04em] font-title text-[14px] font-semibold py-[12px] px-[30px] uppercase leading-loose align-middle inline-block overflow-hidden rounded-[3px] duration-500 ease-in-out" href="#">Post comment</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 lg:col-span-4 px-[15px] mt-[45px] lg:mt-0">
+                            <div class="sidebar">
+                                <div class="pq-widget widget_block pq-widget_search bg-primary mb-[45px] inline-block w-full float-left relative p-[30px] rounded-[3px]">
+                                    <form role="search" method="get" action="#" class="pq-block-search__button-outside pq-block-search__text-button pq-block-search">
+                                        <label for="pq-block-search__input-1" class="pq-block-search__label hidden">Search</label>
+                                        <div class="pq-block-search__inside-wrapper relative">
+                                            <input type="search" id="pq-block-search__input-1" class="pq-block-search__input mb-0 focus:border-0 bg-white border border-solid border-grey rounded-[3px] px-[15px] mb-[0] text-dark w-full float-left text-[16px] font-normal h-[54px] leading-[54px] outline-0 duration-500 ease-in-out font-body">
+                                            <button type="submit" class="pq-block-search__button text-white border-tr-[3px] border-br-[3px] bg-primarydark ml-0 p-[0] w-[54px] h-[54px] leading-[54px] absolute right-0 text-[0px] before:content-['\e610'] before:font-themify before:font-normal before:text-[20px]">Search</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="pq-widget pq-widget_block bg-grey mb-[45px] inline-block w-full float-left relative p-[30px] rounded-[3px]">
+                                    <div class="pq-block-group">
+                                        <div class="pq-block-group__inner-container">
+                                            <h2 class="text-[24px] leading-[32px] mb-[15px] font-title text-dark capitalize font-semibold m-0 break-words">Categories</h2>
+                                            <ul class="pq-block-categories-list pq-block-categories list-none m-0 p-0">
+                                                <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Announcements</a></li>
+                                                <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Assistance</a></li>
+                                                <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Discounts</a></li>
+                                                <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Healthcare</a></li>
+                                                <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Treatment</a></li>
+                                                <li><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Uncategorized</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pq-widget pq-widget_meta bg-grey mb-[45px] inline-block w-full float-left relative p-[30px] rounded-[3px]">
+                                    <h2 class="pq-widget-title text-[24px] leading-[32px] mb-[15px] font-title text-dark capitalize font-semibold m-0 break-words">Meta</h2>
+                                    <ul class="list-none m-0 p-0">
+                                        <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Log in</a></li>
+                                        <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Entries feed</a></li>
+                                        <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Comments feed</a></li>
+                                        <li class="mb-[10px]"><a href="#" class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">WordPress.org</a></li>
+                                    </ul>
+                                </div>
+                                <div class="pq-widget pq-widget_block bg-grey mb-[45px] inline-block w-full float-left relative p-[30px] rounded-[3px]">
+                                    <div class="pq-block-group">
+                                        <div class="pq-block-group__inner-container">
+                                            <h2 class="text-[24px] leading-[32px] mb-[15px] font-title text-dark capitalize font-semibold m-0 break-words">Archives</h2>
+                                            <ul class=" pq-block-archives-list pq-block-archives list-none m-0 p-0">
+                                                <li class="mb-[10px]"><a href='#' class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">December 2021</a></li>
+                                                <li class="mb-[10px]"><a href='#' class="text-dark relative break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">October 2021</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pq-widget pq-widget_block bg-grey mb-[45px] inline-block w-full float-left relative p-[30px] rounded-[3px]">
+                                    <div class="pq-block-group">
+                                        <div class="pq-block-group__inner-container">
+                                            <h2 class="text-[24px] leading-[32px] mb-[15px] font-title text-dark capitalize font-semibold m-0 break-words">Tag</h2>
+                                            <p class="pq-block-tag-cloud"> 
+                                                <a href="#" class="tag-cloud-link text-[14px] bg-white mr-[10px] mb-[10px] inline-block float-left text-dark py-[5px] px-[15px] border border-solid border-white duration-500 ease-in-out rounded-[3px]" aria-label="Adventures">Adventures</a>
+                                                <a href="#" class="tag-cloud-link text-[14px] bg-white mr-[10px] mb-[10px] inline-block float-left text-dark py-[5px] px-[15px] border border-solid border-white duration-500 ease-in-out rounded-[3px]" aria-label="Cardiac">Cardiac</a> 
+                                                <a href="#" class="tag-cloud-link text-[14px] bg-white mr-[10px] mb-[10px] inline-block float-left text-dark py-[5px] px-[15px] border border-solid border-white duration-500 ease-in-out rounded-[3px]" aria-label="Care">Care</a>
+                                                <a href="#" class="tag-cloud-link text-[14px] bg-white mr-[10px] mb-[10px] inline-block float-left text-dark py-[5px] px-[15px] border border-solid border-white duration-500 ease-in-out rounded-[3px]" aria-label="Doctors">Doctors</a>
+                                                <a href="#" class="tag-cloud-link text-[14px] bg-white mr-[10px] mb-[10px] inline-block float-left text-dark py-[5px] px-[15px] border border-solid border-white duration-500 ease-in-out rounded-[3px]" aria-label="Health">Health</a>
+                                                <a href="#" class="tag-cloud-link text-[14px] bg-white mr-[10px] mb-[10px] inline-block float-left text-dark py-[5px] px-[15px] border border-solid border-white duration-500 ease-in-out rounded-[3px]" aria-label="Hospital">Hospital</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pq-widget pq-widget_nav_menu bg-grey mb-[45px] inline-block w-full float-left relative p-[30px] rounded-[3px]">
+                                    <h2 class="pq-widget-title text-[24px] leading-[32px] mb-[15px] font-title text-dark capitalize font-semibold m-0 break-words">services</h2>
+                                    <div class="menu-service-menu-container">
+                                        <ul id="menu-service-menu" class="menu list-none m-0 p-0">
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Angioplasty Services</a></li>
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Cardiology Services</a></li>
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Dental Services</a></li>
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Endocrinology Services</a></li>
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Eye Care Services</a></li>
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Neurology Services</a></li>
+                                            <li class="mb-[10px]"><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">Orthopaedics Services</a></li>
+                                            <li><a href="#" class="text-dark relative font-body break-words pl-[15px] leading-loose font-body text-[16px] font-normal capitalize before:absolute before:content-['\f054'] before:left-0 before:top-[3px] before:text-[10px] before:font-fontawesome before:leading-normal before:font-semibold before:text-primary">RMI Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="pq-widget pq-widget_media_image mb-[45px]">
+                                    <div class="pq-block-group">
+                                        <div class="pq-block-group__inner-container">
+                                            <figure class="pq-block-image size-full is-style-default">
+                                                <img src="images/call-img.jpg" alt="" class="img-fluid">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pq-widget pq-widget_block inline-block w-full float-left relative bg-grey p-[30px] rounded-[3px]">
+                                    <div class="pq-button-block">
+                                        <a href="index.html" class="pq-button pq-button-flat relative w-auto bg-primary text-white tracking-[0.04em] font-title text-[14px] font-semibold py-[12px] px-[30px] uppercase leading-loose align-middle inline-block overflow-hidden rounded-[3px] hover:bg-dark duration-500 ease-in-out"> <span class="text">Download Now</span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog-Info -->
+
+    <!-- Footer -->
+    <footer id="pq-footer" class="inline-block w-full float-left relative">
+        <div class="pq-footer-style-1 bg-primarydark text-white">
+            <div class="pq-subscribe inline-block w-full realtive mt-[-80px] z-[10]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 px-[15px]">
+                                <div class="pq-subscribe-bg bg-primary text-white xl:p-[45px] md:p-[30px] p-[15px] rounded-[3px]">
+                                    <div class="grid grid-rows-1 grid-flow-col">
+                                        <div class="grid grid-cols-12 w-full">
+                                            <div class="flex flex-col col-span-12 lg:col-span-5 px-[15px]">
+                                                <div class="pq-subscribe-block flex items-center mb-[10px]">
+                                                    <img src="images/Subscribe.png" class="pq-subscribe-img w-[55px] text-primary" alt="medicate-subscribe-image">
+                                                    <div class="pq-subscribe-details ml-[30px] text-white flex-1 xl:pr-[50px]">
+                                                        <h5 class="text-white font-title font-semibold capitalize break-words m-0 xl:text-[26px] xl:leading-[34px] lg:text-[22px] lg:leading-[30px] md:text-[20px] md:leading-[28px]">Latest Updates Subscribe To Our Newsletter</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col col-span-12 lg:col-span-7 px-[15px] self-center">
+                                                <div class="pq-subscribe-from">
+                                                    <form id="form" class="form">
+                                                        <div class="form-fields md:flex lg:justify-between">
+                                                            <input type="email" class="bg-[#ffffff24] focus:border-0 border-transparent text-white w-[100%] xl:w-[75%] lg:w-[70%] md:w-[75%] md:mr-[30px] mb-[15px] md:mb-0 float-none md:float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] outline-0 placeholder:text-white placeholder:font-title" placeholder="Your Email">
+                                                            <a href="#" class="relative md:w-auto w-full inline-block text-dark bg-white tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark hover:text-white duration-500">
+                                                                <div class="pq-button-block flex items-center justify-center md:justify-start">
+                                                                   <span class="pq-button-text">Sign Up</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-footer-top pt-[70px] relative z-[9]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <img src="images/footer_logo.png" class="pq-footer-logo w-auto h-[50px] mb-[30px]" alt="medicate-footer-logo">
+                                    <p class="text-white mb-[30px] font-body">It helps designers plan out where the content will sit, the content to be written and approved.</p>
+                                    <div class="pq-footer-social">
+                                        <ul class="list-none m-0 p-0">
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Our Courses</h4>
+                                    <div class="menu-useful-links-container">
+                                        <ul id="menu-useful-links" class="menu m-0 p-0 list-none">
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">About Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Contact Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Services</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Process</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 1</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">FAQ</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 2</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Departments</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Events</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Recent Posts</h4>
+                                    <div class="pq-footer-recent-post flex items-center mb-[24px] pb-[24px] mr-[30px] border-b border-solid border-[#ffffff24]">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/1.jpg" class="w-[80px] h-[80px] rounded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 self-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December<span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Get the Exercise Limited Mobility</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="pq-footer-recent-post last:border-none mr-[30px] m-0 p-0 flex items-center">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/2.jpg" class="w-[80px] h-[80px] rouded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 items-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December <span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Transfusion strategy and heart surgery</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Contact Us</h4>
+                                    <ul class="pq-contact list-none m-0 p-0">
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="tel:+1800001658" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-phone mr-[15px]"></i>
+                                                <span class="text-white font-body">+1800-001-658</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="mailto:info@peacefulthemes.com" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-envelope mr-[15px]"></i>
+                                                <span class="text-white font-body">info@peacefulthemes.com</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <i class="fas fa-map-marker mr-[15px]"></i>
+                                            <span class="text-white font-body">Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer py-[15px] px-0 border-t border-solid border-[#ffffff24] realtive">
+                <div class="xl:container px-[15px]">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 text-center px-[15px]">
+                                <span class="pq-copyright inline-block w-full relative z-[9] font-body"> Copyright 2022 medicate All Rights Reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Back To Top -->
+    <div id="back-to-top">
+        <a class="topbtn rounded-[3px] fixed bottom-[30px] right-[30px] m-0 text-white bg-primary z-[999] text-[16px] leading-[50px] text-center w-[50px] h-[50px]"
+            href="#top">
+            <i class="ion-ios-arrow-up text-[25px] font-black"></i>
+        </a>
+    </div>
+    <!-- Back To Top -->
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

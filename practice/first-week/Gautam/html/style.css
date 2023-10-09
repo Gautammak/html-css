@@ -1,0 +1,30 @@
+p{
+    text-align: center;
+   
+
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+h4{
+  text-align: center;
+}
+
+.card {
+  
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: 180px;
+   gap: 10px;
+  }
+  
+
+  .container {
+    padding: 2px 16px;
+    width: 17%;
+    
+  }

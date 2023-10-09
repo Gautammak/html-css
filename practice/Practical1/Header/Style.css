@@ -1,0 +1,9 @@
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.header-nav{
+  height: auto;
+  width: 100%;
+}

@@ -1,0 +1,75 @@
+/* 1920  */
+@media(max-width:1999px) {}
+
+
+/* 1680, 1600  */
+@media(max-width:1699px) {}
+
+@media(max-width:1679px) {}
+
+/* 1440  */
+@media(max-width:1499px) {}
+
+
+/* 1366  */
+@media(max-width:1399px) {}
+
+/* 1280  */
+@media(max-width:1365px) {}
+
+/* 1180  */
+@media(max-width:1279px) 
+
+
+{
+
+     
+    .pq-portfolio-box .pq-portfolio-img-content {
+        left: 25px;
+    }
+
+    .pq-portfolio-box .pq-portfolio-img-content h5 {
+        padding: 5px 12px;
+        border-radius: 8px;
+        font-size: 25px;
+
+    }
+
+    .pq-portfolio-box .pq-portfolio-img-content span {
+      
+        font-size: 18px;
+      
+    }
+
+    .pq-project .pq-btn-container {
+        right: 37px;
+    }
+}
+
+/* 1024  */
+@media(max-width:1099px) {
+
+    .pq-project .pq-btn-container {
+        right: 19px;
+    }
+}
+
+
+/* 980  */
+@media(max-width:1023px) {}
+
+
+/* 800 786  */
+@media(max-width:979px) {}
+@media(max-width:799px) {}
+
+
+
+/* 480 */
+@media(max-width:767px) {}
+
+/* 380 */
+@media(max-width:479px) {}
+
+/* 320 */
+@media(max-width:397px) {}

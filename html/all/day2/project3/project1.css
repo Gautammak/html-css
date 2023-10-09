@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.newheader{
+     
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+
+ hr.new1 {
+        border-top: 1px solid black;
+        border-width: 3px;
+       
+      
+  }
+   
+  .breadcrumb{
+    margin-left: 290px;
+  }
+
+
+
+  .breadcrumb >.active a {
+    color: black;
+ }
+
+ h2.logo{
+    margin-left:30px ;
+    font-size: 35px;
+ }
+ 
+ p.fourpara{
+    padding-left: 30px;
+    color: black;
+ }

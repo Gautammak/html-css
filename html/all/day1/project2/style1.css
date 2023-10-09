@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #2490eb;
+  
+  }
+
+section{
+    position: relative;
+    padding: 130px 0px;
+}
+
+.container{
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+   
+
+}
+
+
+
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+}
+
+.pq-section.pq-style-1 
+{
+     text-align: center;
+    padding: 0 15em;
+    margin-bottom: 60px;
+}
+
+
+.pq-section.pq-style-1 .pq-section-sub-title{
+ letter-spacing: 0.04em;
+font-family: var(--title-fonts);
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+position: relative;
+text-transform: uppercase;
+color: var(--primary-color);
+background: #d3e9fb;
+padding: 4px 8px;
+margin: 0 0 10px;
+display: inline-block;
+border-radius: 3px;
+}
+
+h5 {
+
+    font-style: normal;
+    font-family: var(--title-fonts);
+    word-wrap: break-word;
+    text-transform: capitalize;
+}
+
+.pq-lg-border-bottom {
+    border-bottom: 1px solid #F1F1F1;
+}
+.pq-lg-border-right {
+    border-right: 1px solid #F1F1F1;
+  }
+
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+  .pq-fancy-box{
+    padding: 45px 30px;
+    text-align: center;
+  }
+
+  .pq-fancy-box.pq-style-1 .pq-fancy-box-icon i {
+    font-size: 64px;
+    line-height: 72px;
+    transition: all 0.5s ease;
+    display: inline-block;
+    color: var(--primary-color);
+  }
+
+  .pq-fancy-box.pq-style-1 .pq-fancy-box-title {
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 24px;
+    font-style: normal;
+
+    line-height: 32px;
+  }
+
+  p{
+    margin: top;
+  }
+
+  .pq-button.pq-button-link {
+    padding: 0;
+    background: transparent;
+    color: var(--primary-color);
+  }
+.pq-button{
+  position: relative;
+  width: auto;
+  background: var(--primary-color);
+  color: var(--white-color);
+  letter-spacing: 0.04em;
+  font-family: var(--title-fonts);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  line-height: 2;
+  vertical-align: middle;
+  border: none;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+a, .button {
+    color: var(--primary-color);
+    outline: none !important;
+    text-decoration: none;
+  }

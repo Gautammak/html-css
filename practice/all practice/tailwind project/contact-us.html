@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicate – Health & Medical HTML Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2490eb',
+                        'primarydark': '#14457b',
+                        'dark': '#18100f',
+                        'secondary': '#666666',
+                        'grey': '#f4f6f9',
+                        'white': '#ffffff',
+                    },
+                    fontFamily: {
+                        'body': ['Montserrat', 'sans-serif'],
+                        'title': ['Quicksand', 'sans-serif'],
+                        'themify': ['themify'],
+                        'fontawesome': ['"Font Awesome 6 Free"'],
+                        'ionicons': ['"Ionicons"']
+                    },
+                    backgroundImage: {
+                        'pattern': "url('images/bg-1.png')",
+                        'arrow': "url('images/process/bg.png')",
+                        'breadcrumb': "url('images/breadcrumb.jpg')"
+                    },
+                    keyframes: {
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translate3d( 0, -100%, 0)'},
+                            '100%': { opacity:'1', transform: 'none'}
+                        }
+                    },
+                    animation:{
+                        fadeInDown: 'fadeInDown 1.25s ease-in-out'
+                    }
+                },
+                container:{
+                    center: true,
+                },
+                screens: {
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1300px'
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- LOADING FONTS AND ICONS -->
+    <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+</head>
+
+<body class="leading-loose">
+
+    <!-- Loading -->
+    <div id="pq-loading" class="bg-white flex flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1000] w-screen h-screen">
+        <img src="images/logo.png" class="img-fluid h-[60px]" alt="loading">
+    </div>
+    <!-- Loading -->
+
+    <!-- Header -->
+    <header id="pq-header" class="pq-header-default relative bg-white z-[99]">
+        <div class="pq-top-header bg-primarydark p-0 text-[14px] hidden lg:block">
+            <div class="lg:container">
+                <div class="flex justify-between">
+                    <div class="grid grid-rows-1 w-full">
+                        <div class="grid grid-cols-12">
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none">
+                                    <li class="inline-block text-white border-[#FFFFFF] border-s border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] ms-0">
+                                        <a href="tel:+1800001658">
+                                            <i class="fas fa-phone mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">+1800-001-658</span>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block text-white border-[#FFFFFF] border-x border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] me-0">
+                                        <a href="mailto:info@peacefulthemes.com">
+                                            <i class="fas fa-envelope mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">info@peacefulthemes.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none text-end">
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-x border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-bottom-header">
+            <div class="xl:container">
+                <nav class="bg-white">
+                    <div class="max-w-screen-xl flex flex-row flex-nowrap items-center justify-between mx-auto p-3 lg:p-5">
+                        <a href="index.html" class="inline-block">
+                            <img src="images/logo.png" class="w-[164px] md:w-[194px] lg:w-[294px]" alt="Medicate-logo">
+                        </a>
+                        <button data-collapse-toggle="navbar-default" type="button" class="inline-block items-center py-[12px] px-[18px] text-[20px] leading-normal text-white bg-primary rounded-[3px] lg:hidden focus:outline-none order-3 ml-[15px] md:ml-[30px]" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="hidden w-full lg:inline-block lg:w-full lg:relative lg:top-0 lg:left-0 absolute top-[78px] left-0 bg-white" id="navbar-default">
+                            <ul class="font-semibold font-title flex flex-col lg:flex-row lg:item-center lg:justify-end ">
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="index.html" class="font-semibold text-[14px] leading-[22px] uppercase">home</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="about-us.html" class="font-semibold text-[14px] leading-[22px] uppercase">about us</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="portfolio-single.html" class="font-semibold text-[14px] leading-[22px] uppercase">portfolio</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="blog-single.html" class="font-semibold text-[14px] leading-[22px] uppercase">blog</a>
+                                </li>
+                                <li class="font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="contact-us.html" class="font-semibold text-primary text-[14px] leading-[22px] uppercase">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pq-menu-search-block relative lg:ml-[30px] ms-auto md:mr-[30px]">
+                            <a href="javascript:void(0)" id="pq-seacrh-btn" class="text-dark text-[20px] inline-block">
+                                <i class="ti-search"></i>
+                            </a>
+                            <div class="pq-search-form absolute top-[59px] lg:top-[65px] right-[-30px] p-[15px] w-[350px] z-[999] bg-white rounded-[3px] border-[2px] border-solid hidden">
+                                <form class="realtive">
+                                    <label class="mb-0 float-left w-full relative">
+                                        <input type="text" placeholder="Search ..." class="bg-grey focus:border-0 rounded-[3px] border-[1px] border-solid border-grey text-dark w-full float-left text-[16px] font-normal pt-0 pb-0 pl-[15px] pr-[15px] h-[54px] leading-[54px] outline-0 relative">
+                                        <button type="submit" class="search-submit before:content-['\e610'] font-themify font-normal text-[20px] border-tr-[3px] border-br[3px] bg-primarydark p-0 absolute text-white leading-[54px] h-[54px] w-[54px] top-0 right-0"></button>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" class="pq-button pq-button-flat relative w-auto inline-block text-white bg-primary tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark duration-500 hidden md:block">
+                            <div class="pq-button-block flex items-center justify-start">
+                               <span class="pq-button-text mr-[10px]">Appointments</span>
+                               <i class="ion ion-plus-round"></i>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb !bg-breadcrumb py-[130px] text-white realtive bg-no-repeat bg-cover bg-[top_center]">
+        <div class="xl:container">
+            <div class="flex items-center justify-center lg:justify-start">
+                <div class="grid grid-rows-1 grid-flow-col">
+                    <div class="grid grid-cols-12 gap-4 w-full">
+                        <div class="flex flex-cols-12 col-span-12 px-[15px]">
+                            <nav class="relative">
+                                <div class="pq-breadcrumb-container">
+                                    <div class="pq-breadcrumb-title">
+                                        <h1 class="font-title font-semibold text-center lg:text-start break-words text-dark m-0 capitalize text-[34px] leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[42px] lg:leading-[50px] xl:text-[56px] xl:leading-[64px] mb-[15px]">Contact Us</h1>
+                                    </div>
+                                    <ol class="flex p-0 m-0 justify-center lg:justify-start list-none">
+                                        <li class="breadcrumb-item mr-[15px] tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                            <a href="index.html" class="text-secondary"><i class="fas fa-home mr-2"></i>Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active mr-[15px] ps-0 tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase text-primary font-title before:content-['\f125'] before:text-[12px] before:font-ionicons before:pr-[15px] before:text-secondary before:float-none">Contact Us</li>
+                                    </ol>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb -->
+
+    <!-- Contact Us -->
+    <section class="pq-contact-us xl:py-[130px] md:py-[90px] py-[60px]">
+        <div class="xl:container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12 gap-y-0">
+                        <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-4 px-[15px]">
+                            <div class="pq-contact-box py-[30px] px-[15px] md:py-[60px] md:px-[30px] bg-grey rounded-[3px] min-h-full">
+                                <div class="pq-contact-box-icon text-center">
+                                    <div class="icon animation-grow">
+                                        <i aria-hidden="true" class="ion ion-location w-[80px] leading-[80px] text-center text-[40px] text-white inline-block rounded-[3px] h-[80px] bg-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="pq-contact-box-info text-center mt-[30px]">
+                                    <h4 class="pq-contact-box-title font-title font-semibold text-dark capitalize break-words m-0 text-[28px] leading-[36px]">Our Location</h4>
+                                    <p class="pq-contact-box-description text-secondary font-body"> The Queen's Walk, Bishop's, London SE1 7PB, United Kingdom. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-4 px-[15px] mt-6 md:mt-0">
+                            <div class="pq-contact-box py-[30px] px-[15px] md:py-[60px] md:px-[30px] bg-grey rounded-[3px] min-h-full">
+                                <div class="pq-contact-box-icon text-center">
+                                    <div class="icon animation-grow">
+                                        <i aria-hidden="true" class="ion ion-ios-telephone w-[80px] leading-[80px] text-center text-[40px] text-white inline-block rounded-[3px] h-[80px] bg-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="pq-contact-box-info text-center mt-[30px] px-[15px]">
+                                    <h4 class="pq-contact-box-title font-title font-semibold text-dark capitalize break-words m-0 text-[28px] leading-[36px]">
+                                        Our Contact
+                                    </h4>
+                                    <p class="pq-contact-box-description text-secondary font-body"> + (567) 1234-567-8900
+                                        <br>+ (567) 1234-567-8901
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-4 px-[15px] mt-6 xl:mt-0">
+                            <div class="pq-contact-box py-[30px] px-[15px] md:py-[60px] md:px-[30px] bg-grey rounded-[3px] min-h-full">
+                                <div class="pq-contact-box-icon text-center">
+                                    <div class="icon animation-grow">
+                                        <i aria-hidden="true" class="ion ion-email-unread w-[80px] leading-[80px] text-center text-[40px] text-white inline-block rounded-[3px] h-[80px] bg-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="pq-contact-box-info text-center mt-[30px]">
+                                    <h4 class="pq-contact-box-title font-title font-semibold text-dark capitalize break-words m-0 text-[28px] leading-[36px]">
+                                        Mail Us
+                                    </h4>
+                                    <p class="pq-contact-box-description text-secondary font-body"> info@peacefulthemes.com
+                                        <br>info2@peacefulthemes.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us -->
+
+    <!-- Form -->
+    <section class="form">
+        <div class="container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-8">
+                        <div class="flex flex-col col-span-8 px-[15px]">
+                            <div class="pq-form-box w-[100%] lg:w-[70%] py-[30px] px-[15px] md:py-[60px] md:px-[45px] my-0 mx-auto shadow-[0_0_30px_0px_rgba(21,21,21,0.11)] text-center mb-0 md:mb-[-60px] bg-white relative z-[1]">
+                                <div class="pq-section-title pq-style-1 text-center mb-[30px] lg:mb-[60px]">
+                                    <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">Contact Us</span>
+                                    <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words">Get In Touch With Us</h5>
+                                </div>
+                                <div class="pq-applyform-whitebg text-start">
+                                    <form class="pq-applyform">
+                                        <div class="grid grid-rows-1 grid-flow-col w-full">
+                                            <div class="grid grid-cols-12 gap-4 gap-y-0">
+                                                <div class="flex flex-col col-span-12 md:col-span-6">
+                                                    <input type="text" class="bg-grey border-0 focus:border-0 placeholder:text-dark placeholder:font-body border border-solid border-gery text-dark mb-[30px] w-full float-left text-[16px] font-noraml px-[15px] h-[54px] leading-[54px] outline-0 duration-500 ease-in-out rounded-[3px]" placeholder="Enter Your Name">
+                                                </div>
+                                                <div class="flex flex-col col-span-12 md:col-span-6">
+                                                    <input type="email" class="bg-grey border-0 focus:border-0 placeholder:text-dark placeholder:font-body border border-solid border-gery text-dark mb-[30px] w-full float-left text-[16px] font-noraml px-[15px] h-[54px] leading-[54px] outline-0 duration-500 ease-in-out rounded-[3px]" placeholder="Enter Your Email">
+                                                </div>
+                                                <div class="flex flex-col col-span-12 md:col-span-6">
+                                                    <input type="email" class="bg-grey border-0 focus:border-0 placeholder:text-dark placeholder:font-body border border-solid border-gery text-dark mb-[30px] w-full float-left text-[16px] font-noraml px-[15px] h-[54px] leading-[54px] outline-0 duration-500 ease-in-out rounded-[3px]" placeholder="Enter Your Phone Number">
+                                                </div>
+                                                <div class="flex flex-col col-span-12 md:col-span-6">
+                                                    <input type="email" class="bg-grey border-0 focus:border-0 placeholder:text-dark placeholder:font-body border border-solid border-gery text-dark mb-[30px] w-full float-left text-[16px] font-noraml px-[15px] h-[54px] leading-[54px] outline-0 duration-500 ease-in-out rounded-[3px]" placeholder="Subject">
+                                                </div>
+                                                <div class="flex flex-col col-span-12">
+                                                    <textarea id="message" class="text-dark border-0 focus:border-0 bg-grey border border-solid border-grey placeholder:text-dark placeholder:font-body mb-[30px] float-left text-[16px] leading-[54px] h-[150px] font-normal py-[10px] px-[15px] duration-500 ease-in-out rounded-[3px] outline-0" name="comment" cols="60" rows="6" placeholder=" Enter Your Comment"></textarea>
+                                                </div>
+                                                <div class="flex flex-col col-span-12">
+                                                    <a class="pq-button mb-0 relative w-fit bg-primary hover:bg-dark text-white tracking-[0.04em] font-title text-[14px] font-semibold py-[12px] px-[30px] uppercase leading-loose align-middle inline-block overflow-hidden rounded-[3px] duration-500 ease-in-out" href="#">send message</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form -->
+
+    <!-- Map -->
+    <div class="map pt-0 leading-[0px]">
+        <div class="pq-bg-map">
+            <iframe class="w-full h-[700px] border-0" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d317893.19730324426!2d-0.1195537!3d51.5032973!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye%20Riverside%20Building%2C%20County%20Hall%20London%20SE1%207PB%20United%20Kingdom!3m2!1d51.5032973!2d-0.1195537!5e0!3m2!1sen!2sin!4v1652772883319!5m2!1sen!2sin" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- Map -->
+
+    <!-- Footer -->
+    <footer id="pq-footer" class="inline-block w-full float-left relative">
+        <div class="pq-footer-style-1 bg-primarydark text-white">
+            <div class="pq-subscribe inline-block w-full realtive mt-[-80px] z-[10]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 px-[15px]">
+                                <div class="pq-subscribe-bg bg-primary text-white xl:p-[45px] md:p-[30px] p-[15px] rounded-[3px]">
+                                    <div class="grid grid-rows-1 grid-flow-col">
+                                        <div class="grid grid-cols-12 w-full">
+                                            <div class="flex flex-col col-span-12 lg:col-span-5 px-[15px]">
+                                                <div class="pq-subscribe-block flex items-center mb-[10px]">
+                                                    <img src="images/Subscribe.png" class="pq-subscribe-img w-[55px] text-primary" alt="medicate-subscribe-image">
+                                                    <div class="pq-subscribe-details ml-[30px] text-white flex-1 xl:pr-[50px]">
+                                                        <h5 class="text-white font-title font-semibold capitalize break-words m-0 xl:text-[26px] xl:leading-[34px] lg:text-[22px] lg:leading-[30px] md:text-[20px] md:leading-[28px]">Latest Updates Subscribe To Our Newsletter</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col col-span-12 lg:col-span-7 px-[15px] self-center">
+                                                <div class="pq-subscribe-from">
+                                                    <form id="form" class="form">
+                                                        <div class="form-fields md:flex lg:justify-between">
+                                                            <input type="email" class="bg-[#ffffff24] border-transparent text-white w-[100%] xl:w-[75%] lg:w-[70%] md:w-[75%] md:mr-[30px] mb-[15px] md:mb-0 float-none md:float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] outline-0 placeholder:text-white placeholder:font-title" placeholder="Your Email">
+                                                            <a href="#" class="relative md:w-auto w-full inline-block text-dark bg-white tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark hover:text-white duration-500">
+                                                                <div class="pq-button-block flex items-center justify-center md:justify-start">
+                                                                   <span class="pq-button-text">Sign Up</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-footer-top pt-[70px] relative z-[9]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <img src="images/footer_logo.png" class="pq-footer-logo w-auto h-[50px] mb-[30px]" alt="medicate-footer-logo">
+                                    <p class="text-white mb-[30px] font-body">It helps designers plan out where the content will sit, the content to be written and approved.</p>
+                                    <div class="pq-footer-social">
+                                        <ul class="list-none m-0 p-0">
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Our Courses</h4>
+                                    <div class="menu-useful-links-container">
+                                        <ul id="menu-useful-links" class="menu m-0 p-0 list-none">
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">About Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Contact Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Services</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Process</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 1</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">FAQ</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 2</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Departments</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Events</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Recent Posts</h4>
+                                    <div class="pq-footer-recent-post flex items-center mb-[24px] pb-[24px] mr-[30px] border-b border-solid border-[#ffffff24]">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/1.jpg" class="w-[80px] h-[80px] rounded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 self-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December<span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Get the Exercise Limited Mobility</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="pq-footer-recent-post last:border-none mr-[30px] m-0 p-0 flex items-center">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/2.jpg" class="w-[80px] h-[80px] rouded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 items-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December <span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Transfusion strategy and heart surgery</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Contact Us</h4>
+                                    <ul class="pq-contact list-none m-0 p-0">
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="tel:+1800001658" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-phone mr-[15px]"></i>
+                                                <span class="text-white font-body">+1800-001-658</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="mailto:info@peacefulthemes.com" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-envelope mr-[15px]"></i>
+                                                <span class="text-white font-body">info@peacefulthemes.com</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <i class="fas fa-map-marker mr-[15px]"></i>
+                                            <span class="text-white font-body">Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer py-[15px] px-0 border-t border-solid border-[#ffffff24] realtive">
+                <div class="xl:container px-[15px]">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 text-center px-[15px]">
+                                <span class="pq-copyright inline-block w-full relative z-[9] font-body"> Copyright 2022 medicate All Rights Reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Back To Top -->
+    <div id="back-to-top">
+        <a class="topbtn rounded-[3px] fixed bottom-[30px] right-[30px] m-0 text-white bg-primary z-[999] text-[16px] leading-[50px] text-center w-[50px] h-[50px]"
+            href="#top">
+            <i class="ion-ios-arrow-up text-[25px] font-black"></i>
+        </a>
+    </div>
+    <!-- Back To Top -->
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

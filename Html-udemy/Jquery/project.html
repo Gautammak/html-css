@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+   $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#id1").fadeToggle()
+    })
+    $("#btn2").click(function(){
+        $("#id1").css("color","white")
+        $("#id1").css("background-color","black");
+        $("#id1").css("font-size","70px")
+        $("#id1").css("border","5px solid white");
+        $("#id1").css("padding-left","100px");
+        $("#id1").css("padding-right","100px");
+        $("#id1").css("border-radius","50px");
+
+        
+
+    })
+
+   })
+   
+   
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="display: none;" id="id1">23/9/2020</h1>
+        <button id="btn1">click here to view the date</button>
+        <button id="btn2">click here</button>
+    </div>
+    
+</body>
+</html>

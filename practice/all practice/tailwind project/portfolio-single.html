@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicate – Health & Medical HTML Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2490eb',
+                        'primarydark': '#14457b',
+                        'dark':'#18100f',
+                        'secondary': '#666666',
+                        'grey': '#f4f6f9',
+                        'white':'#ffffff',
+                    },
+                    fontFamily: {
+                        'body':['Montserrat', 'sans-serif'],
+                        'title':['Quicksand', 'sans-serif'],
+                        'themify':['themify'],
+                        'fontawesome':['"Font Awesome 6 Free"'],
+                        'ionicons':['"Ionicons"']
+                    },
+                    backgroundImage: {
+                        'pattern': "url('images/bg-1.png')",
+                        'arrow':"url('images/process/bg.png')",
+                        'breadcrumb':"url('images/breadcrumb.jpg')"
+                    },
+                    keyframes: {
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translate3d( 0, -100%, 0)'},
+                            '100%': { opacity:'1', transform: 'none'}
+                        }
+                    },
+                    animation:{
+                        fadeInDown: 'fadeInDown 1.25s ease-in-out'
+                    }
+                },
+                container:{
+                    center: true,
+                },
+                screens: {
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1300px'
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- LOADING FONTS AND ICONS -->
+    <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+</head>
+<body class="leading-loose">
+
+    <!-- Loading -->
+    <div id="pq-loading" class="bg-white flex flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1000] w-screen h-screen">
+        <img src="images/logo.png" class="img-fluid h-[60px]" alt="loading">
+    </div>
+    <!-- Loading -->
+
+    <!-- Header -->
+    <header id="pq-header" class="pq-header-default relative bg-white z-[99]">
+        <div class="pq-top-header bg-primarydark p-0 text-[14px] hidden lg:block">
+            <div class="lg:container">
+                <div class="flex justify-between">
+                    <div class="grid grid-rows-1 w-full">
+                        <div class="grid grid-cols-12">
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none">
+                                    <li class="inline-block text-white border-[#FFFFFF] border-s border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] ms-0">
+                                        <a href="tel:+1800001658">
+                                            <i class="fas fa-phone mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">+1800-001-658</span>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block text-white border-[#FFFFFF] border-x border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] me-0">
+                                        <a href="mailto:info@peacefulthemes.com">
+                                            <i class="fas fa-envelope mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">info@peacefulthemes.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none text-end">
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-x border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-bottom-header">
+            <div class="xl:container">
+                <nav class="bg-white">
+                    <div class="max-w-screen-xl flex flex-row flex-nowrap items-center justify-between mx-auto p-3 lg:p-5">
+                        <a href="index.html" class="inline-block">
+                            <img src="images/logo.png" class="w-[164px] md:w-[194px] lg:w-[294px]" alt="Medicate-logo">
+                        </a>
+                        <button data-collapse-toggle="navbar-default" type="button" class="inline-block items-center py-[12px] px-[18px] text-[20px] leading-normal text-white bg-primary rounded-[3px] lg:hidden focus:outline-none order-3 ml-[15px] md:ml-[30px]" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="hidden w-full lg:inline-block lg:w-full lg:relative lg:top-0 lg:left-0 absolute top-[78px] left-0 bg-white" id="navbar-default">
+                            <ul class="font-semibold font-title flex flex-col lg:flex-row lg:item-center lg:justify-end ">
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="index.html" class="font-semibold text-[14px] leading-[22px] uppercase">home</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="about-us.html" class="font-semibold text-[14px] leading-[22px] uppercase">about us</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="portfolio-single.html" class="font-semibold text-primary text-[14px] leading-[22px] uppercase">portfolio</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="blog-single.html" class="font-semibold text-[14px] leading-[22px] uppercase">blog</a>
+                                </li>
+                                <li class="font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="contact-us.html" class="font-semibold text-[14px] leading-[22px] uppercase">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pq-menu-search-block relative lg:ml-[30px] ms-auto md:mr-[30px]">
+                            <a href="javascript:void(0)" id="pq-seacrh-btn" class="text-dark text-[20px] inline-block">
+                                <i class="ti-search"></i>
+                            </a>
+                            <div class="pq-search-form absolute top-[59px] lg:top-[65px] right-[-30px] p-[15px] w-[350px] z-[999] bg-white rounded-[3px] border-[2px] border-solid hidden">
+                                <form class="realtive">
+                                    <label class="mb-0 float-left w-full relative">
+                                        <input type="text" placeholder="Search ..." class="bg-grey focus:border-0 rounded-[3px] border-[1px] border-solid border-grey text-dark w-full float-left text-[16px] font-normal pt-0 pb-0 pl-[15px] pr-[15px] h-[54px] leading-[54px] outline-0 relative">
+                                        <button type="submit" class="search-submit before:content-['\e610'] font-themify font-normal text-[20px] border-tr-[3px] border-br[3px] bg-primarydark p-0 absolute text-white leading-[54px] h-[54px] w-[54px] top-0 right-0"></button>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" class="pq-button pq-button-flat relative w-auto inline-block text-white bg-primary tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark duration-500 hidden md:block">
+                            <div class="pq-button-block flex items-center justify-start">
+                               <span class="pq-button-text mr-[10px]">Appointments</span>
+                               <i class="ion ion-plus-round"></i>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb !bg-breadcrumb py-[130px] text-white realtive bg-no-repeat bg-cover bg-[top_center]">
+        <div class="xl:container">
+            <div class="flex items-center justify-center lg:justify-start">
+                <div class="grid grid-rows-1 grid-flow-col">
+                    <div class="grid grid-cols-12 gap-4 w-full">
+                        <div class="flex flex-cols-12 col-span-12 px-[15px]">
+                            <nav class="relative">
+                                <div class="pq-breadcrumb-container">
+                                    <div class="pq-breadcrumb-title">
+                                        <h1 class="font-title font-semibold text-center lg:text-start break-words text-dark m-0 capitalize text-[34px] leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[42px] lg:leading-[50px] xl:text-[56px] xl:leading-[64px] mb-[15px]">Portfolio Single</h1>
+                                    </div>
+                                    <ol class="flex p-0 m-0 justify-center lg:justify-start list-none">
+                                        <li class="breadcrumb-item mr-[15px] tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                            <a href="index.html" class="text-secondary"><i class="fas fa-home mr-2"></i>Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active mr-[15px] ps-0 tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase text-primary font-title before:content-['\f125'] before:text-[12px] before:font-ionicons before:pr-[15px] before:text-secondary before:float-none">Portfolio Single</li>
+                                    </ol>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb -->
+
+    <!-- Portfolio-Info -->
+    <section class="portfolio-info relative py-[60px] md:py-[90px] xl:py-[130px]">
+        <div class="xl:container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12 gap-y-0">
+                        <div class="flex flex-col col-span-12 lg:col-span-8 px-[15px]">
+                            <img src="images/portfolio/single-portfolio.jpg" alt="">
+                        </div>
+                        <div class="flex flex-col col-span-12 lg:col-span-4 px-[15px] mt-6 lg:mt-0">
+                            <div class="pq-portfolio-info-header">
+                                <h5 class="text-dark font-title font-semibold capitalize break-words m-0 text-[32px] leading-[40px]">project info</h5>
+                                <p class="text-secondary font-body mb-[30px]">It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                            <ul class="pq-info-list m-0 p-0 list-none">
+                                <li class="pb-[15px] mb-[15px] border-b border-solid border-grey">
+                                    <h5 class="inline-block text-[16px] leading-[24px] font-semibold font-title text-dark capitalize m-0 break-words">date</h5>
+                                    <span class="font-body float-right text-primary">14 August 2023</span>
+                                </li>
+                                <li class="pb-[15px] mb-[15px] border-b border-solid border-grey">
+                                    <h5 class="inline-block text-[16px] leading-[24px] font-semibold font-title text-dark capitalize m-0 break-words">client</h5>
+                                    <span class="font-body float-right text-primary">Nik Morison</span>
+                                </li>
+                                <li class="pb-[15px] mb-[15px] border-b border-solid border-grey">
+                                    <h5 class="inline-block text-[16px] leading-[24px] font-semibold font-title text-dark capitalize m-0 break-words">category</h5>
+                                    <span class="font-body float-right text-primary">Angioplasty</span>
+                                </li>
+                                <li class="pb-[15px] mb-[15px] border-b border-solid border-grey">
+                                    <h5 class="inline-block text-[16px] leading-[24px] font-semibold font-title text-dark capitalize m-0 break-words">project</h5>
+                                    <span class="font-body float-right text-primary">Medicate</span>
+                                </li>
+                                <li class="pb-[15px] mb-[15px]">
+                                    <h5 class="inline-block text-[16px] leading-[24px] font-semibold font-title text-dark capitalize m-0 break-words">type of service</h5>
+                                    <span class="font-body float-right text-primary">Orthodontics</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col col-span-12 mt-8 px-[15px]">
+                            <h4 class="font-title font-semibold text-dark text-[28px] leading-[36px] capitalize m-0 break-words">project summary</h4>
+                            <p class="text-secondary mb-[30px] font-body">Project Summery are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                        <div class="flex flex-col col-span-12 md:col-span-6 px-[15px]">
+                            <ul class="pq-list-check m-0 p-0 list-none">
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Aliquam tincidunt nisi vitae nulla molestie laoreet.</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Praesent convallis odio elementum tortor tempor, sed varius odio iaculis.</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Nunc molestie ex at nisi vehicula, et pellentesque tortor elementum.</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Cras id purus faucibus, euismod metus quis, fermentum justo.</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Aenean et libero tincidunt, auctor urna fermentum, sagittis dolor.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col col-span-12 md:col-span-6 px-[15px]">
+                            <ul class="pq-list-check m-0 p-0 list-none">
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">There are many variations of passages of Lorem Ipsum available.</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">It is a long established fact that a reader will be distracted</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Many desktop publishing packages and web page editors now use</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Lorem Ipsum has been the industry's standard dummy text</span>
+                                </li>
+                                <li class="pt-[10px]">
+                                    <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                    <span class="font-body text-secondary">Contrary to popular belief, Lorem Ipsum is not simply random text</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col col-span-12 mt-4 px-[15px]">
+                            <p class="text-secondary font-body mb-[30px]">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12">
+                        <div class="flex flex-col col-span-12 md:col-span-6 px-[15px]">
+                            <img src="images/portfolio/slider/4.jpg" class="max-w-full h-auto rounded-[3px]" alt="">
+                        </div>
+                        <div class="flex flex-col col-span-12 md:col-span-6 px-[15px] mt-6 md:mt-0">
+                            <img src="images/portfolio/slider/5.jpg" class="max-w-full h-auto rounded-[3px]" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12 gap-y-0">
+                        <div class="flex flex-col col-span-12 mt-6 px-[15px]">
+                            <h4 class="font-title font-semibold text-dark text-[28px] leading-[36px] capitalize m-0 break-words">How Traditional Braces Work</h4>
+                            <p class="text-secondary mb-0 font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio-Info -->
+
+    <!-- Counter -->
+    <section class="counter py-[60px] bg-primarydark">
+        <div class="xl:container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12">
+                        <div class="flex flex-row self-center col-span-12 md:col-span-6 lg:col-span-3 px-[15px] justify-center border-r border-solid border-[#F8F8F81C]">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="100" data-speed="5000">100</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="100" data-speed="5000">100</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">saved hearts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row self-center col-span-12 md:col-span-6 lg:col-span-3 px-[15px] justify-center lg:border-r border-solid border-[#F8F8F81C] mt-6 md:mt-0 border-r-0">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="125" data-speed="5000">125</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="125" data-speed="5000">125</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">Expert Doctors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row self-center col-span-12 md:col-span-6 lg:col-span-3 px-[15px] justify-center lg:border-r border-solid border-[#F8F8F81C] mt-6 lg:mt-0 border-r-0">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="250" data-speed="5000">250</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="250" data-speed="5000">250</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">saved tooth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row self-center col-span-12 md:col-span-6 lg:col-span-3 px-[15px] justify-center mt-6 lg:mt-0">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="554" data-speed="5000">554</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="554" data-speed="5000">554</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">happy patients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter -->
+
+    <!-- Portfolio -->
+    <section class="portfolio relative bg-white pt-[60px] pb-[140px] md:pt-[90px] md:pb-[170px] xl:pt-[130px] xl:pb-[210px]">
+        <div class="xl:container px-[15px]">
+            <div class="grid grid-rows-1 grid-flow-col px-[15px]">
+                <div class="grid grid-cols-12 gap-0 w-full">
+                    <div class="flex flex-col col-span-12">
+                        <div class="pq-section-title pq-style-1 text-center xl:ps-[15em] xl:pe-[15em] mb-[60px]">
+                            <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">our portfolio</span>
+                            <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words">Watch Our Latest Work</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col col-span-12">
+                        <div class="owl-carousel owl-loaded owl-drag" data-dots="true" data-nav="false" data-desk_num="3" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" data-margin="30">
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/1.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 ease-in-out group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Clinic</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Home Visit</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/2.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]"> 
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Family</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Investigations</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/3.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Pediatrics</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Surgical</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/4.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Clinic</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Pediatrics Care</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/5.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Clinic</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Cardiology</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20"> 
+                                        <img src="images/portfolio/slider/6.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Pediatrics</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Treatments</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/1.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 ease-in-out group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Clinic</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Home Visit</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/2.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]"> 
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Family</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Investigations</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1 relative overflow-hidden inline-block w-full float-left rounded-[3px] group duration-500 ease-in-out">
+                                    <div class="pq-portfolio-img relative before:absolute before:top-[0] before:left-[0] before:w-full before:h-full before:inline-block before:z-[9] before:bg-secondary before:opacity-0 before:duration-500 before:ease-in-out group-hover:before:opacity-20">
+                                        <img src="images/portfolio/slider/3.jpg" class="img-fluid w-full h-full duration-500 rounded-[3px]" alt="portfolio-slider">
+                                        <a href="portfolio-single.html">
+                                            <div class="pq-portfolio-icon absolute top-[30px] right-[30px] w-[60px] h-[60px] flex flex-row items-center opacity-0 duration-500 group-hover:opacity-100 group-hover:z-[9] group-hover:scale-100">
+                                                <i class="ion ion-plus-round inline-flex w-[54px] h-[54px] text-[16px] leading-[24px] bg-primary items-center justify-center text-white rounded-[3px] duration-500 ease-in-out"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pq-portfolio-info text-center bg-white p-[30px] absolute left-[30px] right-[30px] bottom-[-15px] opacity-0 duration-500 ease-in-out rounded-[3px] group-hover:opacity-100 group-hover:z-[10] group-hover:bottom-[30px]">
+                                        <span class="font-title font-semibold tracking-[0.04em] text-[14px] leading-[22px] uppercase text-primary"><a href="portfolio-single.html">Pediatrics</a></span>
+                                        <h5 class="font-title font-semibold text-[24px] leading-[32px] text-dark capitalize break-words"><a href="portfolio-single.html" class="text-dark hover:text-primary">Surgical</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+
+    <!-- Footer -->
+    <footer id="pq-footer" class="inline-block w-full float-left relative">
+        <div class="pq-footer-style-1 bg-primarydark text-white">
+            <div class="pq-subscribe inline-block w-full realtive mt-[-80px] z-[10]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 px-[15px]">
+                                <div class="pq-subscribe-bg bg-primary text-white xl:p-[45px] md:p-[30px] p-[15px] rounded-[3px]">
+                                    <div class="grid grid-rows-1 grid-flow-col">
+                                        <div class="grid grid-cols-12 w-full">
+                                            <div class="flex flex-col col-span-12 lg:col-span-5 px-[15px]">
+                                                <div class="pq-subscribe-block flex items-center mb-[10px]">
+                                                    <img src="images/Subscribe.png" class="pq-subscribe-img w-[55px] text-primary" alt="medicate-subscribe-image">
+                                                    <div class="pq-subscribe-details ml-[30px] text-white flex-1 xl:pr-[50px]">
+                                                        <h5 class="text-white font-title font-semibold capitalize break-words m-0 xl:text-[26px] xl:leading-[34px] lg:text-[22px] lg:leading-[30px] md:text-[20px] md:leading-[28px]">Latest Updates Subscribe To Our Newsletter</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col col-span-12 lg:col-span-7 px-[15px] self-center">
+                                                <div class="pq-subscribe-from">
+                                                    <form id="form" class="form">
+                                                        <div class="form-fields md:flex lg:justify-between">
+                                                            <input type="email" class="bg-[#ffffff24] focus:border-0 border-transparent text-white w-[100%] xl:w-[75%] lg:w-[70%] md:w-[75%] md:mr-[30px] mb-[15px] md:mb-0 float-none md:float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] outline-0 placeholder:text-white placeholder:font-title" placeholder="Your Email">
+                                                            <a href="#" class="relative md:w-auto w-full inline-block text-dark bg-white tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark hover:text-white duration-500">
+                                                                <div class="pq-button-block flex items-center justify-center md:justify-start">
+                                                                   <span class="pq-button-text">Sign Up</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-footer-top pt-[70px] relative z-[9]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <img src="images/footer_logo.png" class="pq-footer-logo w-auto h-[50px] mb-[30px]" alt="medicate-footer-logo">
+                                    <p class="text-white mb-[30px] font-body">It helps designers plan out where the content will sit, the content to be written and approved.</p>
+                                    <div class="pq-footer-social">
+                                        <ul class="list-none m-0 p-0">
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Our Courses</h4>
+                                    <div class="menu-useful-links-container">
+                                        <ul id="menu-useful-links" class="menu m-0 p-0 list-none">
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">About Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Contact Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Services</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Process</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 1</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">FAQ</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 2</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Departments</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Events</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Recent Posts</h4>
+                                    <div class="pq-footer-recent-post flex items-center mb-[24px] pb-[24px] mr-[30px] border-b border-solid border-[#ffffff24]">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/1.jpg" class="w-[80px] h-[80px] rounded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 self-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December<span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Get the Exercise Limited Mobility</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="pq-footer-recent-post last:border-none mr-[30px] m-0 p-0 flex items-center">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/2.jpg" class="w-[80px] h-[80px] rouded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 items-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December <span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Transfusion strategy and heart surgery</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Contact Us</h4>
+                                    <ul class="pq-contact list-none m-0 p-0">
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="tel:+1800001658" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-phone mr-[15px]"></i>
+                                                <span class="text-white font-body">+1800-001-658</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="mailto:info@peacefulthemes.com" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-envelope mr-[15px]"></i>
+                                                <span class="text-white font-body">info@peacefulthemes.com</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <i class="fas fa-map-marker mr-[15px]"></i>
+                                            <span class="text-white font-body">Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer py-[15px] px-0 border-t border-solid border-[#ffffff24] realtive">
+                <div class="xl:container px-[15px]">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 text-center px-[15px]">
+                                <span class="pq-copyright inline-block w-full relative z-[9] font-body"> Copyright 2022 medicate All Rights Reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Back To Top -->
+    <div id="back-to-top">
+        <a class="topbtn rounded-[3px] fixed bottom-[30px] right-[30px] m-0 text-white bg-primary z-[999] text-[16px] leading-[50px] text-center w-[50px] h-[50px]" href="#top">
+            <i class="ion-ios-arrow-up text-[25px] font-black"></i>
+        </a>
+    </div>
+    <!-- Back To Top -->
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+navbar #ffffff
+navbar font 7f7f7f
+primary #64ddba
+
+green 28a745
+gray title 8e9aa6
+rent 6c757d
+
+
+icon aaaaaa

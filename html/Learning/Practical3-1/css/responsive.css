@@ -1,0 +1,331 @@
+
+/* 
+mobile view 60px section padding
+laptop view 90px section padding */
+
+
+/* 1920  */
+@media(max-width:1999px) {
+    
+}
+
+
+/* 1680, 1600  */
+@media(max-width:1699px) {}
+
+@media(max-width:1679px) {}
+
+/* 1440  */
+@media(max-width:1499px) {}
+
+
+/* 1366  */
+@media(max-width:1399px) {   
+}
+
+/* 1280  */
+@media(max-width:1365px) {
+    .pq-section-btn {
+        margin-top: 48px;
+    }
+}
+
+/* 1180  */
+ @media(max-width:1279px) {
+section{
+        padding: 90px 0 90px 0;
+    }
+
+    .pq-about-section {
+
+        padding: 160px 0 90px 0;
+    }
+
+    .consulting{
+        padding: 90px 0 90px 0;
+    }
+  .pq-section-img  .pq-img1 {
+        width: 100%;
+    }
+
+  .pq-section-img .pq-img2{
+       
+        width: 50%;
+        bottom: 0;
+    } 
+
+     .pq-offer .pq-section-img {
+         margin-bottom: 0;
+    } 
+    .pq-offer .pq-section-img .img-fluid{
+        width: 100%;
+    }
+
+    .consulting-img .img-fluid{
+        width: 100%;
+    }
+
+    .pq-offer   .pq-counter-box2{
+       
+      
+        justify-content: center;
+       
+    }
+   
+    .pq-offer   .pq-counter-box1 {
+       
+      
+        justify-content: center;
+       
+    }
+    .pq-offer   .pq-counter-box3 {
+       
+      
+        justify-content: center;
+       
+    }
+    .pq-offer   .pq-counter-box4 {
+       
+      
+        justify-content: center;
+       
+    }
+
+  }    /* laptop view   */
+
+/* 1024  */
+@media(max-width:1099px) {
+   .navbar .pq-menu-search-icon {
+    
+         margin-left: 5px; 
+    }
+
+ .navbar   .navbar-nav>li {
+         margin-left: 5px; 
+       
+    }
+    .navbar-nav>li {
+        
+         margin-right: 0;
+    }
+   
+    .pq-section-title {
+        
+        font-size: 45px;
+       
+    }
+
+    
+.pq-stretagies-section .pq-section-title-style-1{
+    padding: 0 ;
+
+} 
+
+
+   
+}  
+
+
+/* 980  */
+@media(max-width:1023px) {
+
+
+    .pq-menu-sidebar-icon{
+        display: none;
+    }
+
+ 
+  .pq-stretagies-section  .carousel-inner {
+        height: 800px;
+    }
+
+    .pq-section-title {
+        
+        font-size: 43px;
+       
+    }
+
+
+    .pq-fancy-box.pq-style-1{
+        margin-top: 30px;
+    }
+
+    .pq-team-box.pq-style-1{
+        margin-top: 30px;
+    }
+
+    .pq-award-img.pq-style-1{
+        margin-top: 30px;
+    }
+
+    .pq-award-img.pq-style-2 
+    {
+        margin-top: 30px;
+
+    }
+}
+
+
+/* 800 786  */
+@media(max-width:979px) {
+
+    .pq-section-title {
+        font-size: 35px;  
+       }
+
+
+.pq-project-icon {
+    font-size: 50px;
+   
+}
+.pq-project-info .pq-project-number {
+    font-size: 40px;
+   
+}
+
+.pq-project-info i {
+    font-size: 40px;
+   
+} 
+
+
+    
+}
+@media(max-width:799px) {
+   
+  
+}
+
+
+
+/* 480 */
+ @media(max-width:767px) {
+    section{
+        padding: 60px 0 60px 0;
+    }
+
+    .pq-about-section {
+
+        padding: 130px 0 60px 0;
+    }
+
+    .consulting{
+        padding: 60px 0 60px 0;
+    }
+
+    .pq-section-img {
+        margin-bottom: 30px;
+    }
+
+    .consulting-img{
+        margin-bottom: 30px;
+    }
+   
+
+ .pq-award-img{
+        margin-top: 30px;
+    }
+
+.pq-stretagies-section  .carousel-inner {
+            height: 1180px;
+    }
+
+  .pq-offer   .pq-counter-box2 {
+       
+        border-left: 0; 
+        justify-content: center;
+       
+    }
+    .pq-offer   .pq-counter-box1 {
+       
+      
+        justify-content: center;
+       
+    }
+
+    .pq-offer  .pq-counter-box3 {
+         justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+     
+   }
+
+    .pq-offer  .pq-counter-box4 {
+        justify-content: center;
+         border-left: 0;
+      
+    } 
+   
+      .pq-footer-info .pq-footer-title {
+        
+        margin-top: 20px;
+}
+
+
+   .pq-fancy-box.pq-style-2 
+   {
+    margin-top: 30px;
+   }
+
+   .pq-team-box.pq-style-2{
+    margin-top: 30px;
+   }
+   
+   .pq-section-title {
+    font-size: 30px;
+}
+
+    
+ }  /*  mobile view start */
+
+/* 380 */
+@media(max-width:479px) {
+
+    .pq-section-title {
+        font-size: 29px;
+    }
+    
+    
+
+    .pq-search-icon{
+        display: none;
+    }
+    .pq-team-designations {
+       
+        font-size: 12px;
+       
+    }
+
+    .pq-team-name {
+       
+        font-size: 20px;
+      
+    }
+
+    .pq-stretagies-section .carousel-inner {
+            height: 1140px;
+    }
+
+}
+
+
+
+/* 320 */
+@media(max-width:397px) {
+  
+
+    .pq-section-title {
+        font-size: 24px;
+    }
+    
+    .navbar-brand img {
+        height: 58px;
+    }
+    .pq-copyright {
+       
+        font-size: 14px;
+       
+    }
+  
+
+  
+}

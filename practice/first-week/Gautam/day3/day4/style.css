@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2490eb;
+    --body-fonts: "Montserrat", sans-serif;
+    --title-fonts: "Quicksand", sans-serif;
+
+}
+
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+.about{
+    background-color: #f4f6f9;
+}
+
+.para {
+    color: #666666;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1300px;
+
+}
+
+.list_group {
+    margin-top: 15px;
+
+}
+
+
+.sec_one {
+    display: flex;
+    padding: 100px;
+    position: relative;
+}
+
+
+.about_div {
+    padding-left: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 50px;
+    position: absolute;
+    left: 600px;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.read_div:hover {
+    background-color: black;
+      transition-delay:0.2s;
+
+}
+
+.img {
+    height: auto;
+    width: 100%;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: var(--title-fonts);
+    margin-top: 10px;
+}
+
+.read_div {
+    background-color: #0d6efd;
+    height: 20px;
+    width: 90px;
+    border-radius: 7px 7px;
+    color: white;
+    padding-top: 7px;
+    padding: 10px;
+
+}
+
+.title {
+    color: #0d6efd;
+    height: 20px;
+    width: 100px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    background: #d3e9fb;
+    font-family: var(--title-fonts);
+}
+
+.new_title {
+    text-transform: capitalize;
+}
+
+.btn {
+    position: absolute;
+    top: 78%;
+}
+
+
+.title_sec{
+    color: #0d6efd;
+    font-family: var(--title-fonts);
+    font-size: 14px;
+    background: #d3e9fb;
+    height: 50px;
+    width: 100px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: 45%;
+    margin-bottom:10px;
+    
+
+}
+
+
+.new_card{
+    background-color:#f4f6f9;
+   
+  
+
+}
+
+
+h4{
+    color:  #0d6efd;
+    text-transform: capitalize;
+}
+
+.serv{
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--title-fonts);
+    color: black;
+    font-weight: 600;
+
+}
+
+
+
+.main_card{
+     display: flex;
+    gap: 30px; 
+     margin-left: 18%; 
+     margin-top: 60px;
+
+}
+
+
+.img_card {
+    margin: 20px;
+    height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; 
+
+} 
+
+.img_card  img{
+    
+            transition: 0.5s all ease-in-out;
+
+}
+
+
+.img_card:hover img{
+  transform: scale(1.2);
+}
+
+
+.container{
+ 
+    margin-left: 20px;
+    display: flex;
+}
+
+
+.lab_icon{
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+.new_icon{
+   
+    -webkit-transition: 1 ease-out;
+    -moz-transition: 1s ease-out;
+    transition:  1s ease-out;
+}
+
+.new_icon:hover{
+   -webkit-transform: rotatey(180deg);
+      -moz-transform: rotatey(180deg);
+      transform: y(720deg);
+}
+
+.service{
+    padding: 130px 0 130px 0;
+}
+
+.sub_title{
+      font-weight: 600;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: var(--title-fonts);
+    text-transform: uppercase;
+}
+
+.img_space{
+    padding: 20px;
+}
+

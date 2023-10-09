@@ -1,0 +1,53 @@
+body{
+    background-color: red;
+    background-image: url(images.jpg);
+    background-size: cover;
+}
+
+.position-1{
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#position-2{
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+     
+}
+
+
+.position-2{
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+     
+}
+
+.position-4{
+    font-size: 50px;
+    position: absolute;
+    left: 20%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+
+}
+
+.position-5{
+    font-size: 40px;
+    color: wheat;
+    background-color: green;
+    padding-left: 30px;
+    margin: 50px;
+    border: 5px solid black;
+    background: url(images.jpg);
+    background-attachment: fixed;
+}

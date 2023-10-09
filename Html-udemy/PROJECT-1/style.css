@@ -1,0 +1,164 @@
+#col-header-description{
+    margin-top: 18%;
+}
+
+.col-img{
+    margin-top: 10%;
+}
+
+.header{
+    background-image: linear-gradient(to right ,rgba(0,0,0,0.534),black) , url(bg.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.h1-header{
+    color: white;
+  margin-bottom: 1rem;
+}
+
+.h2-header{
+    color: aqua;
+    margin-bottom: 1rem;
+}
+
+#btn-header{
+    background-color: aqua;
+    margin-top: 1rem;
+}
+
+.line{
+    height: 5px;
+    background-color: aqua;
+}
+
+.about{
+    background-image: linear-gradient(to right,rgba(0,0,0,0.534),black) ,url(bg.jpg);
+    color: white;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+#line-small{
+    height: 5px;
+    background-color: aqua;
+    width: 80px;
+}
+
+ #img-about{
+    margin-bottom: 100px;
+} 
+
+.img-carousel{
+  min-width: 900px;
+  min-height: 900px;
+}
+
+#h1-carousel{
+    position: absolute;
+    bottom: 400px;
+    left: 60px;
+    font-size: 90px;
+}
+
+
+#h2-carousel{
+    position: absolute;
+    bottom: 250px;
+    left: 60px;
+    text-align: left;
+    font-size: 60px;
+}
+
+.img-features{
+    max-height: 500px;
+
+    border: 5px solid aqua;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+
+#text-features{
+    font-style: italic;
+   
+}
+
+#features{
+    padding-bottom: 3rem;
+    background-attachment: fixed;
+    color: white;
+    background-image: linear-gradient(to right , rgba(0,0,0,0.534),black),url(bg.jpg)
+}
+
+.contant{
+    background-attachment: fixed;
+    color: white;
+    background-image: linear-gradient(to right , rgba(0,0,0,0.534),black),url(bg.jpg)
+}
+
+#fab{
+    font-size: 60px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    color: aqua;
+}
+
+.counter-section{
+    background-attachment: fixed;
+    font-size: 50px;
+    background-image: linear-gradient(to left,black,rgba(255,255,255,0)),   url(dumb.jpg);
+    background-size: cover;
+    color:white;
+}
+
+#a-footer{
+    color: aqua;
+    font-size: 50px;
+}
+
+.fa-brands{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+#footer{
+  
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.534), rgba(0,0,0,0.534)), url(gym.png);
+   background-repeat: no-repeat;
+}
+
+.footer{
+    background-attachment: fixed;
+    background-image: linear-gradient(to right , rgba(0,0,0,0.534),black),url(bg.jpg) 
+}
+
+#footer-span{
+    font-size: 30px;
+   color: white;
+
+}
+
+.btn-a{
+    color: aqua;
+}
+
+nav{
+    box-shadow: 0px 2px 2px 0px aqua;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.actives{
+    border-bottom: 2px solid red;
+}
+
+html{
+    scroll-behavior: smooth;
+}

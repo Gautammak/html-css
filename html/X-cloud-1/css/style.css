@@ -1,0 +1,422 @@
+/*
+Template: Xcloud - Cloud Gaming HTML Template
+Author: Peacefulqode.com
+Version: 1.0
+Design and Developed by: Peaceful Qode
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+==> Moz Selection
+==> General
+==> Loading
+==> Back to Top
+==> WordPress Core
+==> Button Core
+==> Dummy data
+==> Blog Sidebar
+==> OWL Carousel
+==> Pagination
+==> Error
+==> Blog
+==> Header
+==> Breadcrumb
+==> Footer
+==> Section Title
+==> Marquee
+==> Image Marquee
+==> Tabs
+==> Video Popup
+==> Client
+==> From
+==> Fancy Box
+==> pricing plan
+==> Process step
+==> Image Box
+==> Game video Box
+==> Hover Image Effect
+==> FAQ
+======================================
+[ End table content ]
+======================================*/
+
+/*================================================
+Fonts
+================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*================================================
+Moz Selection
+================================================*/
+
+:root {
+	--primary-color: #805ef0;
+	--dark-color: #0c0d11;
+	--secondary-color: #c9c6c6;
+	--grey-color: #14141D;
+	--white-color: #ffffff;
+	--body-fonts: 'Poppins';
+	--title-fonts: 'Barlow';
+}
+
+::-moz-selection {
+	text-shadow: none;
+	background: var(--primary-color);
+	color: #fff;
+}
+
+::-moz-selection {
+	text-shadow: none;
+	background: var(--primary-color);
+	color: #fff;
+}
+
+::selection {
+	text-shadow: none;
+	background: var(--primary-color);
+	color: #fff;
+}
+
+/*================================================
+General
+================================================*/
+
+body {
+	background: var(--dark-color);
+	font-family: var(--body-fonts);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	color: var(--secondary-color);
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--title-fonts);
+	color: var(--white-color);
+	font-style: normal;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	letter-spacing: 1px;
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 40px;
+	font-style: normal;
+	line-height: 48px;
+}
+
+h2 {
+	font-size: 36px;
+	font-style: normal;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 32px;
+	font-style: normal;
+	line-height: 40px;
+}
+
+h4 {
+	font-size: 28px;
+	font-style: normal;
+	line-height: 36px;
+}
+
+h5 {
+	font-size: 24px;
+	font-style: normal;
+	line-height: 32px;
+}
+
+h6 {
+	font-size: 20px;
+	font-style: normal;
+	line-height: 28px;
+}
+
+/*===== HTML Tags =====*/
+a,
+.button {
+	color: var(--primary-color);
+	outline: none !important;
+	transition: all 0.5s ease-in-out;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+a:focus,
+a:hover {
+	color: var(--primary-color);
+	outline: none;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 30px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+pre {
+	background: var(--dark-color);
+	padding: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+hr {
+	margin: 0;
+	padding: 0px;
+	border-bottom: 1px solid #e0e0e0;
+	border-top: 0px;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+/*===== Lists (Nested) =====*/
+ol,
+ul {
+	padding-left: 25px;
+	margin-bottom: 1em;
+}
+
+ol li {
+	list-style: decimal;
+}
+
+ol ol {
+	padding-left: 25px;
+}
+
+ul li {
+	list-style: inherit;
+}
+
+/*===== Definition Lists =====*/
+dl dd {
+	margin-bottom: 15px;
+}
+
+dl dd:last-child {
+	margin-bottom: 0px;
+}
+
+/*===== Table =====*/
+table {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+table td,
+table th {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 8px;
+	text-align: center;
+}
+
+/*===== Input Textarea =====*/
+input,
+input.form-control {
+	background: var(--grey-color);
+	border-radius: 0;
+	border: 1px solid var(--grey-color);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	color: var(--secondary-color);
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	padding: 0 15px;
+	height: 54px;
+	line-height: 54px;
+	outline: none;
+	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+.form-control:focus {
+	border-color: var(--primary-color);
+	background-color: transparent;
+	outline: none;
+	box-shadow: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	width: auto;
+	height: auto;
+	float: none;
+	margin-right: 5px;
+}
+
+textarea {
+	background: var(--grey-color);
+	margin-bottom: 30px;
+	border: 1px solid var(--grey-color);
+	color: var(--secondary-color);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	width: 100%;
+	float: left;
+	padding: 10px 15px;
+	outline: none;
+	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	margin-bottom: 30px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: var(--secondary-color);
+}
+
+/*===== Select =====*/
+select,
+select.form-control {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: var(--grey-color);
+	color: var(--secondary-color);
+	width: 100%;
+	float: left;
+	padding: 0 30px 0 15px;
+	height: 51px;
+	line-height: 48px;
+	outline: none;
+	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url('data:image/svg+xml;utf8,<svg fill=\'%23999999\' height=\'24\' viewBox=\'0 0 24 24\' width=\'24\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7 10l5 5 5-5z\'/><path d=\'M0 0h24v24H0z\' fill=\'none\'/></svg>');
+	background-repeat: no-repeat;
+	background-position: right 16px bottom 50%;
+	background-size: 20px 20px;
+}
+
+/*===== Container =====*/
+.container {
+	max-width: 1300px;
+	position: relative;
+}
+
+section {
+	padding: 130px 0;
+	position: relative;
+}
+
+.pq-bg-dark {
+	background-color: var(--dark-color);
+}
+
+.pq-bg-grey {
+	background-color: var(--grey-color) !important;
+}
+
+.pq-bg-primary {
+	background-color: var(--primary-color);
+}
+
+/*================================================
+Loading
+================================================*/
+#pq-loading {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background: var(--grey-color);
+}
+
+#pq-loading img {
+	height: 60px;
+}
+
+/*================================================
+Back to Top
+================================================*/
+#back-to-top .top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	margin: 0px;
+	color: var(--white-color);
+	background: var(--primary-color);
+	z-index: 999;
+	font-size: 28px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+#back-to-top .top:hover {
+	background: var(--white-color);
+}
+
+
+#back-to-top .top i {
+	color: var(--white-color);
+}
+
+#back-to-top:hover .top i {
+	color: var(--dark-color);
+	position: relative;
+	z-index: 9;
+}

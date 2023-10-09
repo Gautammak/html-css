@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicate – Health & Medical HTML Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2490eb',
+                        'primarydark': '#14457b',
+                        'dark':'#18100f',
+                        'secondary': '#666666',
+                        'grey': '#f4f6f9',
+                        'white':'#ffffff',
+                    },
+                    fontFamily: {
+                        'body':['Montserrat', 'sans-serif'],
+                        'title':['Quicksand', 'sans-serif'],
+                        'themify':['themify'],
+                        'fontawesome':['"Font Awesome 6 Free"'],
+                        'ionicons':['"Ionicons"']
+                    },
+                    backgroundImage: {
+                        'pattern': "url('images/bg-1.png')",
+                        'arrow':"url('images/process/bg.png')",
+                        'breadcrumb':"url('images/breadcrumb.jpg')"
+                    },
+                    keyframes: {
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translate3d( 0, -100%, 0)'},
+                            '100%': { opacity:'1', transform: 'none'}
+                        }
+                    },
+                    animation:{
+                        fadeInDown: 'fadeInDown 1.25s ease-in-out'
+                    }
+                },
+                container:{
+                    center: true,
+                },
+                screens: {
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1300px'
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- LOADING FONTS AND ICONS -->
+    <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+</head>
+<body class="leading-loose">
+
+    <!-- Loading -->
+    <div id="pq-loading" class="bg-white flex flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1000] w-screen h-screen">
+        <img src="images/logo.png" class="img-fluid h-[60px]" alt="loading">
+    </div>
+    <!-- Loading -->
+
+    <!-- Header -->
+    <header id="pq-header" class="pq-header-default relative bg-white z-[99]">
+        <div class="pq-top-header bg-primarydark p-0 text-[14px] hidden lg:block">
+            <div class="lg:container">
+                <div class="flex justify-between">
+                    <div class="grid grid-rows-1 w-full">
+                        <div class="grid grid-cols-12">
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none">
+                                    <li class="inline-block text-white border-[#FFFFFF] border-s border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] ms-0">
+                                        <a href="tel:+1800001658">
+                                            <i class="fas fa-phone mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">+1800-001-658</span>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block text-white border-[#FFFFFF] border-x border-opacity-10 pt-[10px] pb-[10px] pl-[20px] pr-[20px] me-0">
+                                        <a href="mailto:info@peacefulthemes.com">
+                                            <i class="fas fa-envelope mr-[10px]"></i>
+                                            <span class="font-semibold font-title not-italic">info@peacefulthemes.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col col-span-6 px-[15px]">
+                                <ul class="list-none text-end">
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-s border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="inline-block border-[#FFFFFF] border-x border-opacity-10">
+                                        <a href="#" class="inline-block text-white pt-[10px] pb-[10px] pl-[20px] pr-[20px] hover:bg-primary duration-500">
+                                            <i class="fab fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-bottom-header">
+            <div class="xl:container">
+                <nav class="bg-white">
+                    <div class="max-w-screen-xl flex flex-row flex-nowrap items-center justify-between mx-auto p-3 lg:p-5">
+                        <a href="index.html" class="inline-block">
+                            <img src="images/logo.png" class="w-[164px] md:w-[194px] lg:w-[294px]" alt="Medicate-logo">
+                        </a>
+                        <button data-collapse-toggle="navbar-default" type="button" class="inline-block items-center py-[12px] px-[18px] text-[20px] leading-normal text-white bg-primary rounded-[3px] lg:hidden focus:outline-none order-3 ml-[15px] md:ml-[30px]" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="hidden w-full lg:inline-block lg:w-full lg:relative lg:top-0 lg:left-0 absolute top-[78px] left-0 bg-white" id="navbar-default">
+                            <ul class="font-semibold font-title flex flex-col lg:flex-row lg:item-center lg:justify-end ">
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="index.html" class="font-semibold text-[14px] leading-[22px] uppercase">home</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="about-us.html" class="font-semibold text-primary text-[14px] leading-[22px] uppercase">about us</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="portfolio-single.html" class="font-semibold text-[14px] leading-[22px] uppercase">portfolio</a>
+                                </li>
+                                <li class="lg:mr-[15px] xl:mr-[30px] font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="blog-single.html" class="font-semibold text-[14px] leading-[22px] uppercase">blog</a>
+                                </li>
+                                <li class="font-normal font-title lg:p-0 p-3 relative inline-block">
+                                    <a href="contact-us.html" class="font-semibold text-[14px] leading-[22px] uppercase">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pq-menu-search-block relative lg:ml-[30px] ms-auto md:mr-[30px]">
+                            <a href="javascript:void(0)" id="pq-seacrh-btn" class="text-dark text-[20px] inline-block">
+                                <i class="ti-search"></i>
+                            </a>
+                            <div class="pq-search-form absolute top-[59px] lg:top-[65px] right-[-30px] p-[15px] w-[350px] z-[999] bg-white rounded-[3px] border-[2px] border-solid hidden">
+                                <form class="realtive">
+                                    <label class="mb-0 float-left w-full relative">
+                                        <input type="text" placeholder="Search ..." class="bg-grey focus:border-0 rounded-[3px] border-[1px] border-solid border-grey text-dark w-full float-left text-[16px] font-normal pt-0 pb-0 pl-[15px] pr-[15px] h-[54px] leading-[54px] outline-0 relative">
+                                        <button type="submit" class="search-submit before:content-['\e610'] font-themify font-normal text-[20px] border-tr-[3px] border-br[3px] bg-primarydark p-0 absolute text-white leading-[54px] h-[54px] w-[54px] top-0 right-0"></button>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" class="pq-button pq-button-flat relative w-auto inline-block text-white bg-primary tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark duration-500 hidden md:block">
+                            <div class="pq-button-block flex items-center justify-start">
+                               <span class="pq-button-text mr-[10px]">Appointments</span>
+                               <i class="ion ion-plus-round"></i>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb !bg-breadcrumb py-[130px] text-white realtive bg-no-repeat bg-cover bg-[top_center]">
+        <div class="xl:container">
+            <div class="flex items-center justify-center lg:justify-start">
+                <div class="grid grid-rows-1 grid-flow-col">
+                    <div class="grid grid-cols-12 gap-4 w-full">
+                        <div class="flex flex-cols-12 col-span-12 px-[15px]">
+                            <nav class="relative">
+                                <div class="pq-breadcrumb-container">
+                                    <div class="pq-breadcrumb-title">
+                                        <h1 class="font-title font-semibold text-center lg:text-start break-words text-dark m-0 capitalize text-[34px] leading-[42px] md:text-[42px] md:leading-[50px] lg:text-[42px] lg:leading-[50px] xl:text-[56px] xl:leading-[64px] mb-[15px]">About Us</h1>
+                                    </div>
+                                    <ol class="flex p-0 m-0 justify-center lg:justify-start list-none">
+                                        <li class="breadcrumb-item mr-[15px] tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                            <a href="index.html" class="text-secondary"><i class="fas fa-home mr-2"></i>Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active mr-[15px] ps-0 tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase text-primary font-title before:content-['\f125'] before:text-[12px] before:font-ionicons before:pr-[15px] before:text-secondary before:float-none">About Us</li>
+                                    </ol>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb -->
+
+    <!-- About Us -->
+    <section class="about-us xl:py-[130px] md:py-[90px] py-[60px]">
+        <div class="xl:container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12">
+                        <div class="flex flex-col xl:col-span-6 col-span-12 px-[15px] self-center xl:pe-12">
+                            <img src="images/About-us/4.jpg" class="max-w-full rounded-[3px]" alt="">
+                        </div>
+                        <div class="flex flex-col xl:col-span-6 col-span-12 xl:px-6 px-[15px] xl:p-0 xl:mt-0 mt-6">
+                            <div class="pq-section-title pq-style-1">
+                                <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">what about us</span>
+                                <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words">Joining Hands With Techno Easement</h5>
+                                <p class="text-secondary mb-[30px] font-body text-[16px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                            <div class="grid grid-rows-1 grid-flow-col w-full">
+                                <div class="grid grid-cols-12">
+                                    <div class="flex flex-col col-span-12 md:col-span-6 px-[15px]">
+                                        <ul class="pq-list-check m-0 p-0 list-none">
+                                            <li class="pt-[10px]">
+                                                <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                                <span class="font-title font-semibold">Intervention Success</span>
+                                            </li>
+                                            <li class="pt-[10px]">
+                                                <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                                <span class="font-title font-semibold">Quality of Care Services</span>
+                                            </li>
+                                            <li class="pt-[10px]">
+                                                <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                                <span class="font-title font-semibold">Client Satisfaction</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-col col-span-12 md:col-span-6 px-[15px]">
+                                        <ul class="pq-list-check m-0 p-0 list-none">
+                                            <li class="pt-[10px]">
+                                                <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                                <span class="font-title font-semibold">Happy with Staff</span>
+                                            </li>
+                                            <li class="pt-[10px]">
+                                                <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                                <span class="font-title font-semibold">Infection Prevention</span>
+                                            </li>
+                                            <li class="pt-[10px]">
+                                                <i class="ion ion-checkmark-round mr-[8px] text-primary"></i>
+                                                <span class="font-title font-semibold">Patient Experience</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-col col-span-12 md:col-span-6 mt-12 px-[15px]">
+                                        <div class="pq-contact-box1 mr-[30px]">
+                                            <h4 class="pq-contact-box-title text-[28px] leading-[36px] font-title font-dark capitalize font-semibold m-0 break-words">+1 (212) 255-5511</h4>
+                                            <p class="pq-contact-box-description text-primary font-body mb-0">Do you have any question?</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col col-span-12 md:col-span-6 mt-12 px-[15px]">
+                                        <img src="images/sign.png" class="w-[100px]" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="relative w-fit text-white inline-block bg-primary tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark duration-500 mt-4">
+                                <div class="pq-button-block flex items-center justify-start">
+                                   <span class="pq-button-text mr-[10px]">Read More</span>
+                                   <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us -->
+
+    <!-- Service -->
+    <section class="service xl:py-[130px] md:py-[90px] py-[60px] bg-grey">
+        <div class="xl:container">
+            <div class="pq-section-title pq-style-1 text-center xl:ps-[15em] xl:pe-[15em] mb-[60px]">
+                <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">our services</span>
+                <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words">Explore Our Main Service</h5>
+            </div>
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12">
+                        <div class="flex flex-col col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 px-[15px]">
+                            <div class="pq-fancy-box pq-style-3 py-[45px] px-[30px] duration-500 ease-in-out bg-white overflow-hidden relative rounded-[3px] group group-hover:bg-primary">
+                                <div class="pq-fancy-box-hoverbg absolute top-0 left-0 w-full h-full opacity-0 duration-500 ease-in-out before:absolute before:w-full before:h-full before:bg-primary before:left-0 before:opacity-90 before:duration-500 before:ease-in-out group-hover:opacity-100">
+                                    <img src="images/services/1.jpg" class="max-w-full h-auto" alt="Images">
+                                </div>
+                                <div class="pq-fancy-box-icon">
+                                    <i class="flaticon-heartbeat text-[64px] leading-[72px] duration-500 ease-in-out inline-block text-primary group-hover:text-white group-hover:relative"></i>
+                                </div>
+                                <div class="pq-fancy-box-info relative">
+                                    <h5 class="pq-fancy-box-title font-title font-dark font-semibold capitalize mt-[15px] mb-[5px] text-[24px] leading-[32px] duration-500 group-hover:text-white">Cardiology</h5>
+                                    <p class="pq-fancybox-description text-secondary font-body mb-[30px] duration-500 group-hover:text-white">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                                    <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] group-hover:text-white duration-500">
+                                        <div class="pq-button-block flex items-center justify-start">
+                                            <span class="pq-button-text text-primary mr-[10px] font-title font-semibold group-hover:text-white duration-500">Read More</span>
+                                            <i class="ion ion-plus-round"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 px-[15px]">
+                            <div class="pq-fancy-box pq-style-3 py-[45px] px-[30px] duration-500 ease-in-out bg-white overflow-hidden relative rounded-[3px] group group-hover:bg-primary mt-6 md:mt-0">
+                                <div class="pq-fancy-box-hoverbg absolute top-0 left-0 w-full h-full opacity-0 duration-500 ease-in-out before:absolute before:w-full before:h-full before:bg-primary before:left-0 before:opacity-90 before:duration-500 before:ease-in-out group-hover:opacity-100">
+                                    <img src="images/services/2.jpg" class="max-w-full h-auto" alt="Images">
+                                </div>
+                                <div class="pq-fancy-box-icon">
+                                    <i class="flaticon-first-aid-box text-[64px] leading-[72px] duration-500 ease-in-out inline-block text-primary group-hover:text-white group-hover:relative"></i>
+                                </div>
+                                <div class="pq-fancy-box-info relative">
+                                    <h5 class="pq-fancy-box-title font-title font-dark font-semibold capitalize mt-[15px] mb-[5px] text-[24px] leading-[32px] duration-500 group-hover:text-white">Endocrinology</h5>
+                                    <p class="pq-fancybox-description text-secondary font-body mb-[30px] duration-500 group-hover:text-white">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                                    <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] group-hover:text-white duration-500">
+                                        <div class="pq-button-block flex items-center justify-start">
+                                            <span class="pq-button-text text-primary mr-[10px] font-title font-semibold group-hover:text-white duration-500">Read More</span>
+                                            <i class="ion ion-plus-round"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 px-[15px]">
+                            <div class="pq-fancy-box pq-style-3 py-[45px] px-[30px] duration-500 ease-in-out bg-white overflow-hidden relative rounded-[3px] group group-hover:bg-primary mt-6 lg:mt-0">
+                                <div class="pq-fancy-box-hoverbg absolute top-0 left-0 w-full h-full opacity-0 duration-500 ease-in-out before:absolute before:w-full before:h-full before:bg-primary before:left-0 before:opacity-90 before:duration-500 before:ease-in-out group-hover:opacity-100">
+                                    <img src="images/services/3.jpg" class="max-w-full h-auto" alt="Images">
+                                </div>
+                                <div class="pq-fancy-box-icon">
+                                    <i class="flaticon-healthcare text-[64px] leading-[72px] duration-500 ease-in-out inline-block text-primary group-hover:text-white group-hover:relative"></i>
+                                </div>
+                                <div class="pq-fancy-box-info relative">
+                                    <h5 class="pq-fancy-box-title font-title font-dark font-semibold capitalize mt-[15px] mb-[5px] text-[24px] leading-[32px] duration-500 group-hover:text-white">Angioplasty</h5>
+                                    <p class="pq-fancybox-description text-secondary font-body mb-[30px] duration-500 group-hover:text-white">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                                    <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] group-hover:text-white duration-500">
+                                        <div class="pq-button-block flex items-center justify-start">
+                                            <span class="pq-button-text text-primary mr-[10px] font-title font-semibold group-hover:text-white duration-500">Read More</span>
+                                            <i class="ion ion-plus-round"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 px-[15px]">
+                            <div class="pq-fancy-box pq-style-3 py-[45px] px-[30px] duration-500 ease-in-out bg-white overflow-hidden relative rounded-[3px] mt-6 group group-hover:bg-primary">
+                                <div class="pq-fancy-box-hoverbg absolute top-0 left-0 w-full h-full opacity-0 duration-500 ease-in-out before:absolute before:w-full before:h-full before:bg-primary before:left-0 before:opacity-90 before:duration-500 before:ease-in-out group-hover:opacity-100">
+                                    <img src="images/services/2.jpg" class="max-w-full h-auto" alt="Images">
+                                </div>
+                                <div class="pq-fancy-box-icon">
+                                    <i class="flaticon-ct-scan text-[64px] leading-[72px] duration-500 ease-in-out inline-block text-primary group-hover:text-white group-hover:relative"></i>
+                                </div>
+                                <div class="pq-fancy-box-info relative">
+                                    <h5 class="pq-fancy-box-title font-title font-dark font-semibold capitalize mt-[15px] mb-[5px] text-[24px] leading-[32px] duration-500 group-hover:text-white">Eye Care</h5>
+                                    <p class="pq-fancybox-description text-secondary font-body mb-[30px] duration-500 group-hover:text-white">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                                    <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] group-hover:text-white duration-500">
+                                        <div class="pq-button-block flex items-center justify-start">
+                                            <span class="pq-button-text text-primary mr-[10px] font-title font-semibold group-hover:text-white duration-500">Read More</span>
+                                            <i class="ion ion-plus-round"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 px-[15px]">
+                            <div class="pq-fancy-box pq-style-3 py-[45px] px-[30px] duration-500 ease-in-out bg-white overflow-hidden relative rounded-[3px] mt-6 group group-hover:bg-primary">
+                                <div class="pq-fancy-box-hoverbg absolute top-0 left-0 w-full h-full opacity-0 duration-500 ease-in-out before:absolute before:w-full before:h-full before:bg-primary before:left-0 before:opacity-90 before:duration-500 before:ease-in-out group-hover:opacity-100">
+                                    <img src="images/services/3.jpg" class="max-w-full h-auto" alt="Images">
+                                </div>
+                                <div class="pq-fancy-box-icon">
+                                    <i class="flaticon-x-ray-1 text-[64px] leading-[72px] duration-500 ease-in-out inline-block text-primary group-hover:text-white group-hover:relative"></i>
+                                </div>
+                                <div class="pq-fancy-box-info relative">
+                                    <h5 class="pq-fancy-box-title font-title font-dark font-semibold capitalize mt-[15px] mb-[5px] text-[24px] leading-[32px] duration-500 group-hover:text-white">Neurology</h5>
+                                    <p class="pq-fancybox-description text-secondary font-body mb-[30px] duration-500 group-hover:text-white">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                                    <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] group-hover:text-white duration-500">
+                                        <div class="pq-button-block flex items-center justify-start">
+                                            <span class="pq-button-text text-primary mr-[10px] font-title font-semibold group-hover:text-white duration-500">Read More</span>
+                                            <i class="ion ion-plus-round"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 px-[15px]">
+                            <div class="pq-fancy-box pq-style-3 py-[45px] px-[30px] duration-500 ease-in-out bg-white overflow-hidden relative rounded-[3px] mt-6 group group-hover:bg-primary">
+                                <div class="pq-fancy-box-hoverbg absolute top-0 left-0 w-full h-full opacity-0 duration-500 ease-in-out before:absolute before:w-full before:h-full before:bg-primary before:left-0 before:opacity-90 before:duration-500 before:ease-in-out group-hover:opacity-100">
+                                    <img src="images/services/1.jpg" class="max-w-full h-auto" alt="Images">
+                                </div>
+                                <div class="pq-fancy-box-icon">
+                                    <i class="flaticon-health-insurance text-[64px] leading-[72px] duration-500 ease-in-out inline-block text-primary group-hover:text-white group-hover:relative"></i>
+                                </div>
+                                <div class="pq-fancy-box-info relative">
+                                    <h5 class="pq-fancy-box-title font-title font-dark font-semibold capitalize mt-[15px] mb-[5px] text-[24px] leading-[32px] duration-500 group-hover:text-white">Orthopaedics</h5>
+                                    <p class="pq-fancybox-description text-secondary font-body mb-[30px] duration-500 group-hover:text-white">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                                    <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] group-hover:text-white duration-500">
+                                        <div class="pq-button-block flex items-center justify-start">
+                                            <span class="pq-button-text text-primary mr-[10px] font-title font-semibold group-hover:text-white duration-500">Read More</span>
+                                            <i class="ion ion-plus-round"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service -->
+
+    <!-- Counter -->
+    <section class="counter py-[60px] bg-primarydark">
+        <div class="xl:container">
+            <div class="flex items-center">
+                <div class="grid grid-rows-1 grid-flow-col w-full">
+                    <div class="grid grid-cols-12">
+                        <div class="flex flex-row self-center xl:col-span-3 md:col-span-6 col-span-12 px-[15px] justify-center">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="100" data-speed="5000">100</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="100" data-speed="5000">100</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">saved hearts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row self-center xl:col-span-3 md:col-span-6 col-span-12 px-[15px] justify-center mt-6 md:mt-0">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="125" data-speed="5000">125</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="125" data-speed="5000">125</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">Expert Doctors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row self-center xl:col-span-3 md:col-span-6 col-span-12 px-[15px] justify-center mt-6 xl:mt-0">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="250" data-speed="5000">250</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="250" data-speed="5000">250</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">saved tooth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row self-center xl:col-span-3 md:col-span-6 col-span-12 px-[15px] justify-center mt-6 xl:mt-0">
+                            <div class="pq-counter pq-style-2">
+                                <div class="pq-counter-contain">
+                                    <div class="pq-counter-info text-center relative pt-[30px]">
+                                        <div class="pq-counter-num-prefix inline-flex">
+                                            <div class="pq-counter-num-prefix pq-counter-top relative flex items-center">
+                                                <h5 class="timer text-[46px] leading-[46px] inline-block font-semibold font-title text-white" data-to="554" data-speed="5000">554</h5>
+                                                <span class="pq-counter-prefix text-[46px] leading-[46px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                            <div class="pq-counter-num-prefix pq-counter-top absolute top-[-10px] left-[50%] -translate-x-1/2 flex items-center">
+                                                <h5 class="timer stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white" data-to="554" data-speed="5000">554</h5>
+                                                <span class="pq-counter-prefix stroke-white stroke-[1px] opacity-[0.03] text-[62px] leading-[70px] font-title font-semibold inline-block text-white">k</span>
+                                            </div>
+                                        </div>
+                                        <p class="pq-counter-description font-title mb-0 uppercase tracking-[0.04em] text-[14px] leading-[22px] font-semibold mt-[5px] text-white">happy patients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- Services -->
+    <section class="service xl:py-[130px] md:py-[90px] py-[60px]">
+        <div class="xl:container">
+            <div class="pq-section-title pq-style-1 text-center xl:ps-[15em] xl:pe-[15em] mb-[60px]">
+                <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">our clients</span>
+                <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words">Our Client Happy Say About Us</h5>
+            </div>
+            <div class="grid grid-rows-1 grid-flow-col">
+                <div class="grid grid-cols-12 gap-0 w-full">
+                    <div class="flex flex-col col-span-12 px-[15px]">
+                        <div class="owl-carousel owl-theme" data-dots="true" data-nav="false" data-desk_num="2"
+                            data-lap_num="2" data-tab_num="1" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
+                            data-loop="true" data-margin="30">
+                            <div class="item">
+                                <div class="pq-testimonial-box pq-style-1 bg-grey p-[15px] md:p-[45px] rounded-[3px]">
+                                    <div class="pq-testimonial-info">
+                                        <div class="pq-testimonial-content">
+                                            <p class="mb-[30px] font-body text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-media flex relative">
+                                        <div class="pq-testimonial-img mr-[15px]">
+                                            <img src="images/testimonial/1.png" class="w-[80px] h-[80px] rounded-full" alt="testimonial-image">
+                                        </div>
+                                        <div class="pq-testimonial-meta self-center z-[2]">
+                                            <h5 class="font-title font-semibold text-dark text-[24px] leading-[32px] capitalize m-0 break-words">Dr. john Martin</h5>
+                                            <span class="text-primary tracking-[0.04em] text-[14px] leading-[22px] font-semibold font-title uppercase">Cancer Research</span>
+                                        </div>
+                                        <div class="pq-testimonial-icon">
+                                            <i class="fas fa-quote-right absolute right-0 bottom-0 opacity-10 z-[1] text-primary text-[64px] leading-[72px]"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-testimonial-box pq-style-1 bg-grey p-[15px] md:p-[45px] rounded-[3px]">
+                                    <div class="pq-testimonial-info">
+                                        <div class="pq-testimonial-content">
+                                            <p class="mb-[30px] font-body text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-media flex relative">
+                                        <div class="pq-testimonial-img mr-[15px]">
+                                            <img src="images/testimonial/2.png" class="w-[80px] h-[80px] rounded-full" alt="testimonial-image">
+                                        </div>
+                                        <div class="pq-testimonial-meta self-center z-[2]">
+                                            <h5 class="font-title font-semibold text-dark text-[24px] leading-[32px] capitalize m-0 break-words">Dr. john Martin</h5>
+                                            <span class="text-primary tracking-[0.04em] text-[14px] leading-[22px] font-semibold font-title uppercase">Cancer Research</span>
+                                        </div>
+                                        <div class="pq-testimonial-icon">
+                                            <i class="fas fa-quote-right absolute right-0 bottom-0 opacity-10 z-[1] text-primary text-[64px] leading-[72px]"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-testimonial-box pq-style-1 bg-grey p-[15px] md:p-[45px] rounded-[3px]">
+                                    <div class="pq-testimonial-info">
+                                        <div class="pq-testimonial-content">
+                                            <p class="mb-[30px] font-body text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don’t look even believable. There are many variations of passages.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-media flex relative">
+                                        <div class="pq-testimonial-img mr-[15px]">
+                                            <img src="images/testimonial/3.png" class="w-[80px] h-[80px] rounded-full" alt="testimonial-image">
+                                        </div>
+                                        <div class="pq-testimonial-meta">
+                                            <h5 class="font-title font-semibold text-dark text-[24px] leading-[32px] capitalize m-0 break-words">Dr. john Martin</h5>
+                                            <span class="text-primary tracking-[0.04em] text-[14px] leading-[22px] font-semibold font-title uppercase">Cancer Research</span>
+                                        </div>
+                                        <div class="pq-testimonial-icon">
+                                            <i class="fas fa-quote-right absolute right-0 bottom-0 opacity-10 z-[1] text-primary text-[64px] leading-[72px]"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+
+    <!-- Process -->
+    <section class="process bg-grey relative xl:py-[130px] md:py-[90px] py-[60px] before:hidden before:xl:block before:absolute before:top-[-7%] before:left-[0] before:inline-block before:w-full before:h-full before:opacity-100 before:bg-arrow before:bg-center before:bg-no-repeat before:bg-auto">
+        <div class="xl:container">
+            <div class="pq-section-title pq-style-1 text-center xl:ps-[15em] xl:pe-[15em] mb-[60px]">
+                <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">our step</span>
+                <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words">Our Workig Best Process</h5>
+            </div>
+            <div class="grid grid-rows-1 grid-flow-col">
+                <div class="grid grid-cols-12 w-full">
+                    <div class="flex flex-col xl:col-span-3 md:col-span-6 col-span-12 px-[15px]">
+                        <div class="pq-process-step pq-process-style-2 relative p-[30px] text-center lg:text-start">
+                            <div class="pq-process-media relative mb-[30px] inline-block">
+                                <div class="pq-process-img">
+                                    <img src="images/process/1.png" class="w-[200px] rounded-full" alt="">
+                                </div>
+                                <div class="pq-process-number absolute top-[20px] left-[-5px] rounded-full bg-primary text-[16px] text-white leading-[48px] w-[48px] h-[48px] text-center font-semibold">
+                                    <span>01</span>
+                                </div>
+                            </div>
+                            <div class="pq-process-step-info">
+                                <h5 class="pq-process-title capitalize font-dark font-title font-semibold text-[24px] leading-[32px] m-0 break-words">Emergency Care</h5>
+                                <p class="pq-process-description mb-0 text-secondary font-body">There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col xl:col-span-3 md:col-span-6 col-span-12 px-[15px]">
+                        <div class="pq-process-step pq-process-style-2 relative p-[30px] text-center lg:text-start">
+                            <div class="pq-process-media relative mb-[30px] inline-block">
+                                <div class="pq-process-img">
+                                    <img src="images/process/2.png" class="w-[200px] rounded-full" alt="">
+                                </div>
+                                <div class="pq-process-number absolute top-[20px] left-[-5px] rounded-full bg-primary text-[16px] text-white leading-[48px] w-[48px] h-[48px] text-center font-semibold">
+                                    <span>02</span>
+                                </div>
+                            </div>
+                            <div class="pq-process-step-info">
+                                <h5 class="pq-process-title capitalize font-dark font-title font-semibold text-[24px] leading-[32px] m-0 break-words">Emergency Care</h5>
+                                <p class="pq-process-description mb-0 text-secondary font-body">There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col xl:col-span-3 md:col-span-6 col-span-12 px-[15px]">
+                        <div class="pq-process-step pq-process-style-2 relative p-[30px] text-center lg:text-start">
+                            <div class="pq-process-media relative mb-[30px] inline-block">
+                                <div class="pq-process-img">
+                                    <img src="images/process/3.png" class="w-[200px] rounded-full" alt="">
+                                </div>
+                                <div class="pq-process-number absolute top-[20px] left-[-5px] rounded-full bg-primary text-[16px] text-white leading-[48px] w-[48px] h-[48px] text-center font-semibold">
+                                    <span>03</span>
+                                </div>
+                            </div>
+                            <div class="pq-process-step-info">
+                                <h5 class="pq-process-title capitalize font-dark font-title font-semibold text-[24px] leading-[32px] m-0 break-words">Emergency Care</h5>
+                                <p class="pq-process-description mb-0 text-secondary font-body">There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col xl:col-span-3 md:col-span-6 col-span-12 px-[15px]">
+                        <div class="pq-process-step pq-process-style-2 relative p-[30px] text-center lg:text-start">
+                            <div class="pq-process-media relative mb-[30px] inline-block">
+                                <div class="pq-process-img">
+                                    <img src="images/process/4.png" class="w-[200px] rounded-full" alt="">
+                                </div>
+                                <div class="pq-process-number absolute top-[20px] left-[-5px] rounded-full bg-primary text-[16px] text-white leading-[48px] w-[48px] h-[48px] text-center font-semibold">
+                                    <span>04</span>
+                                </div>
+                            </div>
+                            <div class="pq-process-step-info">
+                                <h5 class="pq-process-title capitalize font-dark font-title font-semibold text-[24px] leading-[32px] m-0 break-words">Emergency Care</h5>
+                                <p class="pq-process-description mb-0 text-secondary font-body">There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row col-span-12 px-[15px] justify-center">
+                        <a href="#" class="relative w-fit text-white inline-block bg-primary tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark duration-500 mt-[45px]">
+                            <div class="pq-button-block flex items-center justify-start">
+                               <span class="pq-button-text mr-[10px]">Get Appointment</span>
+                               <i class="ion ion-plus-round"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Process -->
+
+    <!-- Blog -->
+    <section class="blog pt-[60px] pb-[140px] md:pt-[90px] md:pb-[170px] xl:pt-[130px] xl:pb-[210px]">
+        <div class="xl:container">
+            <div class="pq-section-title pq-style-1 text-center xl:ps-[15em] xl:pe-[15em] mb-[60px]">
+                <span class="pq-section-sub-title uppercase font-title tracking-[0.04em] font-semibold text-[14px] leading-[22px] relative text-primary bg-[#d3e9fb] py-[4px] px-[8px] mb-[10px] inline-block rounded-[3px]">our clients</span>
+                <h5 class="pq-section-title font-title text-[28px] leading-[36px] md:text-[36px] md:leading-[44px] lg:text-[44px] lg:leading-[52px] xl:text-[48px] xl:leading-[56px] text-dark relative z-[9] font-semibold p-0 m-0 block break-words"> Our Client Happy Say About Us</h5>
+            </div>
+            <div class="grid grid-rows-1 grid-flow-col">
+                <div class="grid grid-cols-12 w-full">
+                    <div class="flex flex-col col-span-12 px-[15px]">
+                        <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="3"
+                            data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
+                            data-loop="true" data-margin="30">
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/1.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Get the Exercise Limited Mobility</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/2.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Transfusion strategy and heart surgery</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/3.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Latest Equipment for the Heart Treatment</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/4.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">What is Future of Blood Pressure Monitoring?</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/5.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Goals Setting the people Heart is Healthy</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/6.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">For Examination of kids get Special offers</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/7.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Heart Failure Treatment: High Blood Pressure</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/8.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Hard content we decide ourselves a intently</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-blog-post pq-style-1 mb-0 bg-grey rounded-[3px] group">
+                                    <div class="pq-post-media overflow-hidden mb-0 relative rounded-tl-[3px] rounded-tr-[3px]">
+                                        <img src="images/blog/9.jpg" class="scale-100 duration-500 ease-in-out w-full rounded-tl-[3px] rounded-tr-[3px] border-bl-0 border-br-0 group-hover:scale-110" alt="images">
+                                        <div class="pq-post-date font-title bg-primary py-[4px] px-[8px] leading-normal capitalize text-white text-center absolute bottom-[15px] left-[15px] rounded-[3px]">
+                                            <a href="blog-single.html" class="text-white tracking-[0.04em] text-[14px] leading-[22px] font-semibold uppercase font-title">
+                                                <span>December 5, 2021</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="pq-blog-contain p-[15px] md:p-[30px]">
+                                        <div class="pq-post-meta">
+                                            <ul class="flex pb-[15px] mb-[15px] w-full flex border-b border-solid border-[#ededed] list-none">
+                                                <li class="pq-post-author float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary"><i class="fa fa-user mr-[10px] text-primary"></i>admin</li>
+                                                <li class="pq-post-comment last: mr-0 float-left inline-block mr-[20px] tracking-[0.04em] text-[14px] leading-[22px] font-title uppercase font-semibold text-secondary">
+                                                    <a href="blog-single.html" class="text-secondary no-underline">
+                                                        <i class="fa fa-comments mr-[10px] text-primary"></i>
+                                                        0 Comments
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h5 class="pq-blog-title mb-[5px] text-[24px] leading-[32px] font-title font-dark font-semibold capitalize break-words">
+                                            <a href="blog-single.html">Is Running Really Good for the Heart?</a>
+                                        </h5>
+                                        <div class="pq-blog-info">
+                                            <p class="font-body text-secondary mb-[30px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                        </div>
+                                        <a href="#" class="pq-button pq-button-link p-[0] bg-transparent text-primary relative w-auto tracking-[0.04em] font-title text-[14px] leading-[22px] font-semibold uppercase leading-loose inline-block overflow-hidden rounded-[3px] hover:text-dark duration-500">
+                                            <div class="pq-button-block flex items-center justify-start">
+                                                <span class="pq-button-text text-primary mr-[10px] font-title font-semibold hover:text-dark duration-500">Read More</span>
+                                                <i class="ion ion-plus-round"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog -->
+
+    <!-- Footer -->
+    <footer id="pq-footer" class="inline-block w-full float-left relative">
+        <div class="pq-footer-style-1 bg-primarydark text-white">
+            <div class="pq-subscribe inline-block w-full realtive mt-[-80px]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 px-[15px]">
+                                <div class="pq-subscribe-bg bg-primary text-white xl:p-[45px] md:p-[30px] p-[15px] rounded-[3px]">
+                                    <div class="grid grid-rows-1 grid-flow-col">
+                                        <div class="grid grid-cols-12 w-full">
+                                            <div class="flex flex-col col-span-12 lg:col-span-5 px-[15px]">
+                                                <div class="pq-subscribe-block flex items-center mb-[10px]">
+                                                    <img src="images/Subscribe.png" class="pq-subscribe-img w-[55px] text-primary" alt="medicate-subscribe-image">
+                                                    <div class="pq-subscribe-details ml-[30px] text-white flex-1 xl:pr-[50px]">
+                                                        <h5 class="text-white font-title font-semibold capitalize break-words m-0 xl:text-[26px] xl:leading-[34px] lg:text-[22px] lg:leading-[30px] md:text-[20px] md:leading-[28px]">Latest Updates Subscribe To Our Newsletter</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col col-span-12 lg:col-span-7 px-[15px] self-center">
+                                                <div class="pq-subscribe-from">
+                                                    <form id="form" class="form">
+                                                        <div class="form-fields md:flex lg:justify-between">
+                                                            <input type="email" class="border-0 bg-[#ffffff24] border-transparent text-white w-[100%] xl:w-[75%] lg:w-[70%] md:w-[75%] md:mr-[30px] mb-[15px] md:mb-0 float-none md:float-left text-[16px] leading-[54px] font-normal px-[15px] h-[54px] duration-500 ease-in-out rounded-[3px] !outline-0 placeholder:text-white placeholder:font-title" placeholder="Your Email">
+                                                            <a href="#" class="relative md:w-auto w-full inline-block text-dark bg-white tracking-[0.04em] font-title text-[14px] leading-loose uppercase font-semibold py-3 pl-[30px] pr-[30px] rounded-[3px] hover:bg-dark hover:text-white duration-500">
+                                                                <div class="pq-button-block flex items-center justify-center md:justify-start">
+                                                                   <span class="pq-button-text">Sign Up</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-footer-top pt-[70px]">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <img src="images/footer_logo.png" class="pq-footer-logo w-auto h-[50px] mb-[30px]" alt="medicate-footer-logo">
+                                    <p class="text-white mb-[30px] font-body">It helps designers plan out where the content will sit, the content to be written and approved.</p>
+                                    <div class="pq-footer-social">
+                                        <ul class="list-none m-0 p-0">
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li class="float-left mr-[10px] mb-[15px]">
+                                                <a href="#" class="rounded-[3px] bg-[#ffffff24] text-white w-[50px] h-[50px] leading-[50px] inline-block text-center relative hover:bg-primary duration-500">
+                                                    <i class="fab fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Our Courses</h4>
+                                    <div class="menu-useful-links-container">
+                                        <ul id="menu-useful-links" class="menu m-0 p-0 list-none">
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">About Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Contact Us</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Services</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Our Process</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 1</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">FAQ</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Doctors 2</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Departments</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Events</a>
+                                            </li>
+                                            <li class="w-[49%] inline-block mb-[12px] relative">
+                                                <a href="#" class="font-body ps-[15px] before:absolute before:top-[4px] before:bottom-0 before:left-0 before:w-auto before:h-auto before:inline before:bg-transparent before:my-auto before:mx-0 before:content-['\f054'] before: mr-[10px] before:font-fontawesome before:text-[11px] before:font-black">Member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Recent Posts</h4>
+                                    <div class="pq-footer-recent-post flex items-center mb-[24px] pb-[24px] mr-[30px] border-b border-solid border-[#ffffff24]">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/1.jpg" class="w-[80px] h-[80px] rounded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 self-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December<span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Get the Exercise Limited Mobility</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="pq-footer-recent-post last:border-none mr-[30px] m-0 p-0 flex items-center">
+                                        <div class="pq-footer-recent-post-media mr-[15px]">
+                                            <a href="#">
+                                                <img src="images/footer-image/2.jpg" class="w-[80px] h-[80px] rouded-[3px]" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info flex-1 items-center">
+                                            <a href="#" class="pq-post-date text-white font-title uppercase text-[12px] leading-[22px] font-semibold tracking-[0.04em]">
+                                                <i class="far fa-calendar-alt mr-[8px]"></i>December <span>12</span>, 2021 </a>
+                                            <h6 class="text-white text-[16px] leading-[1.5] mb-0 font-semibold font-title capitalize break-words">
+                                                <a href="#">Transfusion strategy and heart surgery</a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col col-span-12 md:col-span-6 xl:col-span-3 px-[15px]">
+                                <div class="pq-footer-block mb-[45px]">
+                                    <h4 class="footer-title mb-[30px] p-0 text-[26px] leading-[34px] reative font-title font-semibold capitalize text-white">Contact Us</h4>
+                                    <ul class="pq-contact list-none m-0 p-0">
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="tel:+1800001658" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-phone mr-[15px]"></i>
+                                                <span class="text-white font-body">+1800-001-658</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <a href="mailto:info@peacefulthemes.com" class="p-0 text-white relative border-none inline-block w-full">
+                                                <i class="fas fa-envelope mr-[15px]"></i>
+                                                <span class="text-white font-body">info@peacefulthemes.com</span>
+                                            </a>
+                                        </li>
+                                        <li class="flex items-center mb-[15px]">
+                                            <i class="fas fa-map-marker mr-[15px]"></i>
+                                            <span class="text-white font-body">Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-copyright-footer py-[15px] px-0 border-t border-solid border-[#ffffff24] realtive">
+                <div class="xl:container">
+                    <div class="grid grid-rows-1 grid-flow-col">
+                        <div class="grid grid-cols-12 w-full">
+                            <div class="flex flex-col col-span-12 text-center px-[15px]">
+                                <span class="pq-copyright inline-block w-full relative z-[9] font-body"> Copyright 2022 medicate All Rights Reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Back To Top -->
+    <div id="back-to-top">
+        <a class="topbtn rounded-[3px] fixed bottom-[30px] right-[30px] m-0 text-white bg-primary z-[999] text-[16px] leading-[50px] text-center w-[50px] h-[50px]" href="#top">
+            <i class="ion-ios-arrow-up text-[25px] font-black"></i>
+        </a>
+    </div>
+    <!-- Back To Top -->
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+</html>

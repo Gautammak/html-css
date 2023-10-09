@@ -1,0 +1,206 @@
+*{
+    font-family: "Lato";
+}
+
+body, ul, li{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    width: 967px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ffffff;
+}
+
+header h2{
+    text-indent: -10000px;
+    background: url(Images/burnstudio.png) no-repeat;
+    width: 167px;
+    float: left;
+}
+
+header h2:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header nav{
+    float:right;
+}
+
+header nav li{
+    line-height: 1;
+    list-style-type: none;
+    float: left;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+header nav li a.current{
+    color: #999999;
+}
+
+header nav li a:hover{
+    color: #999999;
+}
+
+header nav:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#welcome{
+    text-align: center;
+}
+
+#welcome h1{
+    font-size: 42px;
+    font-family: "HelveticaLTStd";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#welcome div p{
+    font-size: 21px;
+    font-family: "HelveticaLTStd";
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+button{
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #ca1f1f;
+}
+
+#projects h2{
+    font-size: 32px;
+}
+
+#projects li{
+    width: 31%;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 100px;
+    border : #999999 1px solid;
+    border-radius: 2px;
+    margin: 0 10px;
+    margin-bottom: 100px;
+}
+
+#projects li img{
+    width: 100%;
+}
+
+#projects:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+p.tags{
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    line-height: 1;
+}
+
+.footer{
+    background-color: #e5e5e5;
+    display: inline-block;
+    width: 100%;
+}
+
+.wrapper #div1{
+    width: 48%;
+    float: left;
+    margin-bottom: 68px;
+    font-size: 16px;
+}
+
+.wrapper #div2{
+    width: 48%;
+    float: right;
+}
+
+#div2:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.wrapper #div2 ul li{
+    list-style: none;
+}
+
+section div h4{
+   float: left;
+}
+
+section div h4:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+section nav{
+    float: right;
+}
+
+section nav li{
+    line-height: 4.1;
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+section nav li a.current{
+    color: #099999;
+}
+
+section nav li a:hover{
+    color: #099999;
+}
+
+section nav li:after{
+    display: block;
+    content: "";
+    clear: both;
+}
